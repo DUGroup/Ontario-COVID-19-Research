@@ -65,8 +65,12 @@ df %>%
             size = 3, 
             colour = "black") +
   facet_wrap(~ Public_Health_Unit) +
+<<<<<<< HEAD
   theme (legend.position = "none",
          ncol = 3)
+=======
+  theme (legend.position = "none")
+>>>>>>> fca8292d54623bdc348d762b1ed4e44d90e369d5
 ```
 
 
