@@ -1,0 +1,72 @@
+---
+title: "Ontario COVID-19 Dataset"
+output: github_document
+---
+
+## Load in the data
+```{r load_libraries, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(lubridate)
+
+```
+
+## Load Data
+
+```{r}
+df <- read_csv("Data/ontario_corona_cases.csv")
+```
+
+## Total Cases in Ontario
+
+This chart shows the exponential growth in COVID-19 cases in Ontario as of `r Sys.time()`. To date there are `r length(df$Case_number)` cases of COVID-19 as reported by the Ontario government. 
+
+```{r}
+current_time <- Sys.time()
+
+df %>% 
+  group_by (Date) %>% 
+  count () %>% 
+  ungroup() %>% 
+  mutate (cumsum = cumsum(n)) %>% 
+  # print (n = Inf)
+  ggplot (aes (x = Date, y = cumsum)) +
+  geom_line() +
+  geom_point() +
+  scale_y_continuous(limits = c(0, length (df$Case_number) + 5)) +
+  labs (title = "Number of COVID-19 Cases in Ontario",
+        x = "Date Reported",
+        y = "Number of Cases") +
+  geom_text (aes (label = cumsum), 
+             vjust = -1) +
+  annotate("text", x = as.Date("2020-02-01"), y = length(df$Case_number) - 5, 
+           label = paste0("Current as of\n", current_time )
+           )
+
+```
+
+
+## Cases Reported by Health Unit
+Most of cases are reported in Toronto however the virus is spreading to other regions. 
+
+```{r}
+df %>% 
+  group_by (Date, Public_Health_Unit) %>% 
+  count () %>% 
+  group_by (Public_Health_Unit) %>% 
+  mutate (cumsum = cumsum (n)) %>% 
+  arrange (Public_Health_Unit) %>% 
+  ggplot (aes (x = Date, y = cumsum, colour = Public_Health_Unit)) +
+  geom_line (aes (group = 1)) +
+  geom_point(size = 1) +
+  geom_text(aes (label = cumsum), 
+            vjust = -1, 
+            size = 3, 
+            colour = "black") +
+  facet_wrap(~ Public_Health_Unit) +
+  theme (legend.position = "none",
+         ncol = 3)
+```
+
+
