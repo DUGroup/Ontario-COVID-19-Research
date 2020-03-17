@@ -1,22 +1,22 @@
-Case number,Patient (age and gender,Public Health Unit,Hospital ((if applicable),"Transmission (community, travel or home)",Status(self-isolating or hospitalized),Date
-1,,Toronto,Sunnybrook Health Sciences Centre,travel (Wuhan),,2020-01-25
-2,,Toronto,Sunnybrook Health Sciences Centre,travel (Wuhan),,2020-01-27
-3,20's female,London,London Health Sciences Centre,,self-isolating,2020-01-31
+Case_number,age_gender,Public_Health_Unit,Hospital,Transmission,Status,Date
+1,Not Available,Toronto,Sunnybrook Health Sciences Centre,travel (Wuhan),Not Available,2020-01-25
+2,Not Available,Toronto,Sunnybrook Health Sciences Centre,travel (Wuhan),Not Available,2020-01-27
+3,20's female,Middlesex London,London Health Sciences Centre,,self-isolating,2020-01-31
 4,60's female,Toronto,Sunnybrook Health Sciences Centre,travel (Iran),self-isolating,2020-02-21
-5,60's male,Toronto,,travel (Iran),self-isolating,2020-02-27
-6,,,,,,
-7,50's male,Toronto,Sunnybrook,travel (Iran),,2020-02-28
-8,80's male,Toronto,Scarborough Health Network's General Hospital',travel (Egypt),,2020-02-28
-9,30's female,York,Mackenzie Health,travel (Iran),,2020-02-29
-10,50's female,Durham,Lakeridge Health Ajax,,,2020-02-29
-11,60's male,Durham,Lakeridge Health Ajax,,,2020-02-29
-12,50's male,Toronto,Mackenzie Richmond Hill Hospital,close contact,,2020-03-01
-13,40's male,York,Mackenzie Richmond Hill,travel (Iran),,2020-03-01
-14,60's male,York,North York General Hospital',travel (Iran),,2020-03-01
-15,70's female,Newmarket,Southlake Regional Health Centre,travel (Egypt),,2020-03-01
-16,,,,,,2020-03-02
-17,,,,,,2020-03-02
-18,,,,,,2020-03-02
+5,60's male,Toronto,Not Available,travel (Iran),self-isolating,2020-02-27
+6,Not Available,NotAvailable,Not Available,Not Available,Not Available,2020-02-27
+7,50's male,Toronto,Sunnybrook,travel (Iran),Not Available,2020-02-28
+8,80's male,Toronto,Scarborough Health Network's General Hospital',travel (Egypt),Not Available,2020-02-28
+9,30's female,York,Mackenzie Health,travel (Iran),Not Available,2020-02-29
+10,50's female,Durham,Lakeridge Health Ajax,,Not Available,2020-02-29
+11,60's male,Durham,Lakeridge Health Ajax,,Not Available,2020-02-29
+12,50's male,Toronto,Mackenzie Richmond Hill Hospital,close contact,Not Available,2020-03-01
+13,40's male,York,Mackenzie Richmond Hill,travel (Iran),Not Available,2020-03-01
+14,60's male,York,North York General Hospital',travel (Iran),Not Available,2020-03-01
+15,70's female,Newmarket,Southlake Regional Health Centre,travel (Egypt),Not Available,2020-03-01
+16,Not Available,NotAvailable,Not Available,Not Available,Not Available,2020-03-02
+17,Not Available,NotAvailable,Not Available,Not Available,Not Available,2020-03-02
+18,Not Available,NotAvailable,Not Available,Not Available,Not Available,2020-03-02
 19,70's female,York,Mackenzie Richmond Hill,travel (Egypt),,2020-03-03
 20,50's male,York,North York General Hospital',travel (Iran),,2020-03-03
 21,50's female,Waterloo,Grand River,travel (Italy),,2020-03-05
@@ -26,35 +26,38 @@ Case number,Patient (age and gender,Public Health Unit,Hospital ((if applicable)
 25,male 50's,York,North York General Hospital,travel (Iran),,2020-03-06
 26,male 40's,Toronto,Toronto Western Hospital,travel (Las Vegas),,2020-03-06
 27,male 20's,Toronto,Mount Sinai Hospital,travel (Italy),,2020-03-06
-28,female 60's,Richmond Hill,Mackenzie Richmond Hill,travel (Iran),,2020-03-06
-32,50s Male,Peel Public Health,Brampton Civic Hospital,travel (Germany),self-isolating,2020-03-09
-33,80s Male,Toronto Public Health,North York General Hospital,travel (Iran),self-isolating,2020-03-09
-34,70s Female,Toronto Public Health,North York General Hospital,travel (Iran),self-isolating,2020-03-09
-35,30s Female,Peel Public Health,Brampton Civic Hospital,close contact,self-isolating,2020-03-10
-36,40s Male,Toronto Public Health,St. Joseph's Health Centre,travel (Switzerland),self-isolating,2020-03-11
-37,50s Male,Sudbury and District Health Unit,Health Sciences North,pending,self-isolating,2020-03-11
-38,30s Female,York Public Health,Mackenzie Health,travel (Egypt),self-isolating,2020-03-11
-39,30s Male,Toronto Public Health,Toronto Western,travel (USA),self-isolating,2020-03-11
-40,40s Male,Ottawa Public Health,Ottawa Hospital,travel (Austria),self-isolating,2020-03-11
-41,30s Female,Halton Public Health,Hamilton Health Sciences,travel (USA),self-isolating,2020-03-11
-42,40s Female,Toronto Public Health,St Joseph’s Health Centre,travel (USA),self-isolating,2020-03-11
-43,50s Male,Hamilton Public Health,pending,travel (pending),self-isolating,2020-03-12
-44,<18 Female,Peel Public Health,N/A,close contact,self-isolating,2020-03-12
-45,20s Male,Toronto Public Health,Sunnybrook,close contact,self-isolating,2020-03-12
-46,70s Male,Toronto Public Health,Mississauga Hospital,travel (USA),self-isolating,2020-03-12
-47,40s Male,Toronto Public Health,St Michael’s Hospital,travel (USA),self-isolating,2020-03-12
-48,60s Female,Region of Waterloo Public Health,Grand River Hospital,travel (Puerto Rico),self-isolating,2020-03-12
-49,40s Female,Ottawa Public Health,Queensway Carlton Hospital,travel (Italy),self-isolating,2020-03-12
-50,20s Female,Toronto Public Health,Trillium Health Partners,travel (Europe),self-isolating,2020-03-12
-51,40s Female,Halton Public Health,Joseph Brant Hospital,"travel (USA, Costa Rica)",self-isolating,2020-03-12
-52,<18 Male,Toronto Public Health,North York General,close contact,self-isolating,2020-03-12
-53,30s Male,Toronto Public Health,North York General,close contact,self-isolating,2020-03-12
-54,20s Male,Toronto Public Health,Sunnybrook,travel (USA),self-isolating,2020-03-12
-55,60s Male,Toronto Public Health,Sunnybrook,travel (USA),self-isolating,2020-03-12
-56,60s Female,Toronto Public Health,Sunnybrook,travel (USA),self-isolating,2020-03-12
-57,20s Female,Peel Public Health,pending,travel (pending),self-isolating,2020-03-12
-58,40s Male,Region of Waterloo Public Health,Grand River Hospital,travel (USA),self-isolating,2020-03-12
-59,40s Male,Simcoe Muskoka District Health Unit,Royal Victoria Hospital,travel (Spain),self-isolating,2020-03-12
+28,female 60's,RichmondHill,Mackenzie Richmond Hill,travel (Iran),,2020-03-06
+29,40's female,Toronto,Sunnybrook Health Sciences Centre,travel (Colorado),,2020-03-08
+30,60's male,York,North York General Hospital,travel (USA - Washington),,2020-03-08
+31,60's female,Toronto,Scarborough Health Network,travel (France),,2020-03-08
+32,50s Male,Peel,Brampton Civic Hospital,travel (Germany),self-isolating,2020-03-09
+33,80s Male,Toronto,North York General Hospital,travel (Iran),self-isolating,2020-03-09
+34,70s Female,Toronto,North York General Hospital,travel (Iran),self-isolating,2020-03-09
+35,30s Female,Peel,Brampton Civic Hospital,close contact,self-isolating,2020-03-10
+36,40s Male,Toronto,St. Joseph's Health Centre,travel (Switzerland),self-isolating,2020-03-11
+37,50s Male,Sudbury and District ,Health Sciences North,pending,self-isolating,2020-03-11
+38,30s Female,York,Mackenzie Health,travel (Egypt),self-isolating,2020-03-11
+39,30s Male,Toronto,Toronto Western,travel (USA),self-isolating,2020-03-11
+40,40s Male,Ottawa,Ottawa Hospital,travel (Austria),self-isolating,2020-03-11
+41,30s Female,Halton,Hamilton Health Sciences,travel (USA),self-isolating,2020-03-11
+42,40s Female,Toronto,St Joseph’s Health Centre,travel (USA),self-isolating,2020-03-11
+43,50s Male,Hamilton,pending,travel (pending),self-isolating,2020-03-12
+44,<18 Female,Peel,N/A,close contact,self-isolating,2020-03-12
+45,20s Male,Toronto,Sunnybrook,close contact,self-isolating,2020-03-12
+46,70s Male,Toronto,Mississauga Hospital,travel (USA),self-isolating,2020-03-12
+47,40s Male,Toronto,St Michael’s Hospital,travel (USA),self-isolating,2020-03-12
+48,60s Female,Waterloo,Grand River Hospital,travel (Puerto Rico),self-isolating,2020-03-12
+49,40s Female,Ottawa,Queensway Carlton Hospital,travel (Italy),self-isolating,2020-03-12
+50,20s Female,Toronto,Trillium Health Partners,travel (Europe),self-isolating,2020-03-12
+51,40s Female,Halton,Joseph Brant Hospital,"travel (USA, Costa Rica)",self-isolating,2020-03-12
+52,<18 Male,Toronto,North York General,close contact,self-isolating,2020-03-12
+53,30s Male,Toronto,North York General,close contact,self-isolating,2020-03-12
+54,20s Male,Toronto,Sunnybrook,travel (USA),self-isolating,2020-03-12
+55,60s Male,Toronto,Sunnybrook,travel (USA),self-isolating,2020-03-12
+56,60s Female,Toronto,Sunnybrook,travel (USA),self-isolating,2020-03-12
+57,20s Female,Peel,pending,travel (pending),self-isolating,2020-03-12
+58,40s Male,Waterloo,Grand River Hospital,travel (USA),self-isolating,2020-03-12
+59,40s Male,Simcoe Muskoka,Royal Victoria Hospital,travel (Spain),self-isolating,2020-03-12
 60,20s Female,York,pending,travel (pending),self-isolating,2020-03-13
 61,20s Female,Peel,pending,close contact,self-isolating,2020-03-13
 62,60s Female,Peel,pending,"travel (pending), close contact",self-isolating,2020-03-13
@@ -88,7 +91,7 @@ Case number,Patient (age and gender,Public Health Unit,Hospital ((if applicable)
 90,pending,Waterloo,pending,pending,self-isolating,2020-03-14
 91,pending,Toronto,pending,pending,self-isolating,2020-03-14
 92,50s Female,Middlesex London,London Health Sciences,pending,self-isolating,2020-03-14
-93,60s Female,"Haliburton, Kawartha, Pine Ridge District",Northumberland Hills Hospital,travel (Spain and Portugal),self-isolating,2020-03-14
+93,60s Female,"Haliburton,Kawartha,Pine Ridge ",Northumberland Hills Hospital,travel (Spain and Portugal),self-isolating,2020-03-14
 94,pending,Toronto,pending,pending,self-isolating,2020-03-14
 95,pending,Toronto,pending,pending,self-isolating,2020-03-14
 96,50s Male,Durham,Lakeridge Health (Oshawa),travel (Asia),self-isolating,2020-03-14
@@ -111,7 +114,7 @@ Case number,Patient (age and gender,Public Health Unit,Hospital ((if applicable)
 113,pending,Peel,pending,pending,self-isolating,2020-03-15
 114,pending,Ottawa,pending,pending,self-isolating,2020-03-15
 115,pending,Ottawa,pending,pending,self-isolating,2020-03-15
-116,pending,Haliburton Kawartha Pineridge,pending,pending,self-isolating,2020-03-15
+116,pending,"Haliburton,Kawartha,Pine Ridge ",pending,pending,self-isolating,2020-03-15
 117,pending,Ottawa,pending,pending,self-isolating,2020-03-15
 118,50s Female,Niagara,St. Catharines,travel (Egypt),self-isolating,2020-03-15
 119,pending,Peel,pending,pending,self-isolating,2020-03-15
@@ -145,7 +148,7 @@ Case number,Patient (age and gender,Public Health Unit,Hospital ((if applicable)
 147,pending,Hamilton,pending,pending,self-isolating,2020-03-16
 148,pending,Ottawa,pending,pending,self-isolating,2020-03-16
 149,40s Male,Wellington Dufferin Guelph,Headwaters Health Centre,travel (USA),self-isolating,2020-03-16
-150,50s Female,Sudbury,Health Sciences North,close contact,self-isolating,2020-03-16
+150,50s Female,Sudbury and District ,Health Sciences North,close contact,self-isolating,2020-03-16
 151,pending,Durham,pending,pending,self-isolating,2020-03-16
 152,pending,York,pending,pending,self-isolating,2020-03-16
 153,pending,Peel,pending,pending,self-isolating,2020-03-16
