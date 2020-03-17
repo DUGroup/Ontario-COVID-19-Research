@@ -1,4 +1,32 @@
 Case number,Patient (age and gender,Public Health Unit,Hospital ((if applicable),"Transmission (community,Êtravel or home)",Status(self-isolating or hospitalized),Date
+1,,Toronto,Sunnybrook Health Sciences Centre,travel (Wuhan),,2020-01-25
+2,,Toronto,Sunnybrook Health Sciences Centre,travel (Wuhan),,2020-01-27
+3,20's female,London,London Health Sciences Centre,,self-isolating,2020-01-31
+4,60's female,Toronto,Sunnybrook Health Sciences Centre,travel (Iran),self-isolating,2020-02-21
+5,60's male,Toronto,,travel (Iran),self-isolating,2020-02-27
+6,,,,,,
+7,50's male,Toronto,Sunnybrook,travel (Iran),,2020-02-28
+8,80's male,Toronto,Scarborough Health Network's General Hospital',travel (Egypt),,2020-02-28
+9,30's female,York,Mackenzie Health,travel (Iran),,2020-02-29
+10,50's female,Durham,Lakeridge Health Ajax,,,2020-02-29
+11,60's male,Durham,Lakeridge Health Ajax,,,2020-02-29
+12,50's male,Toronto,Mackenzie Richmond Hill Hospital,close contact,,2020-03-01
+13,40's male,York,Mackenzie Richmond Hill,travel (Iran),,2020-03-01
+14,60's male,York,North York General Hospital',travel (Iran),,2020-03-01
+15,70's female,Newmarket,Southlake Regional Health Centre,travel (Egypt),,2020-03-01
+16,,,,,,2020-03-02
+17,,,,,,2020-03-02
+18,,,,,,2020-03-02
+19,70's female,York,Mackenzie Richmond Hill,travel (Egypt),,2020-03-03
+20,50's male,York,North York General Hospital',travel (Iran),,2020-03-03
+21,50's female,Waterloo,Grand River,travel (Italy),,2020-03-05
+22,60's male,Toronto,Sunnybrook Health Sciences Centre,travel (Iran),,2020-03-05
+23,male 60's,Peel,Trillium Health Partners - Mississauga Hospital,cruise ship (california),,2020-03-06
+24,female 60's,Peel,Trillium Health Partners - Mississauga Hospital,cruise ship (california),,2020-03-06
+25,male 50's,York,North York General Hospital,travel (Iran),,2020-03-06
+26,male 40's,Toronto,Toronto Western Hospital,travel (Las Vegas),,2020-03-06
+27,male 20's,Toronto,Mount Sinai Hospital,travel (Italy),,2020-03-06
+28,female 60's,Richmond Hill,Mackenzie Richmond Hill,travel (Iran),,2020-03-06
 32,50s Male,Peel Public Health,Brampton Civic Hospital,travel (Germany),self-isolating,2020-03-09
 33,80s Male,Toronto Public Health,North York General Hospital,travel (Iran),self-isolating,2020-03-09
 34,70s Female,Toronto Public Health,North York General Hospital,travel (Iran),self-isolating,2020-03-09
