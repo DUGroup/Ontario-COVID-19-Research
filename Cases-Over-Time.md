@@ -30,7 +30,7 @@ df <- read_csv("Data/ontario_corona_cases.csv")
 ## Total Cases in Ontario
 
 This chart shows the exponential growth in COVID-19 cases in Ontario as
-of 2020-03-18 13:59:16. To date there are 212 cases of COVID-19 as
+of 2020-03-18 14:03:24. To date there are 212 cases of COVID-19 as
 reported by the Ontario government.
 
 ``` r
@@ -81,8 +81,9 @@ cases_by_region %>%
   geom_point(size = 1) +
   geom_text(aes (label = cumsum), 
             vjust = -1, 
-            size = 3, 
+            size = 2, 
             colour = "black") +
+  scale_y_continuous(limits = c(0, (max(cases_by_region$cumsum) + 5))) +
   facet_wrap(~label, 
              ncol = 1) +
   theme (legend.position = "none")

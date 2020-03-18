@@ -50,7 +50,7 @@ df %>%
 ## Cases Reported by Health Unit
 Most of cases are reported in Toronto however the virus is spreading to other regions. 
 
-```{r fig.height=20, message=FALSE}
+```{r fig.height=40, message=FALSE}
 cases_by_region <- df %>% 
   group_by (Date, Public_Health_Unit) %>% 
   count () %>% 
@@ -68,8 +68,9 @@ cases_by_region %>%
   geom_point(size = 1) +
   geom_text(aes (label = cumsum), 
             vjust = -1, 
-            size = 3, 
+            size = 2, 
             colour = "black") +
+  scale_y_continuous(limits = c(0, (max(cases_by_region$cumsum) + 5))) +
   facet_wrap(~label, 
              ncol = 1) +
   theme (legend.position = "none")
