@@ -1,7 +1,14 @@
 Ontario COVID-19 Dataset
 ================
 
-## Load in the data
+## Load Libraries
+
+``` r
+knitr::opts_chunk$set(echo = TRUE)
+
+suppressPackageStartupMessages(library(tidyverse))
+suppressPackageStartupMessages(library(lubridate))
+```
 
 ## Load Data
 
@@ -23,7 +30,7 @@ df <- read_csv("Data/ontario_corona_cases.csv")
 ## Total Cases in Ontario
 
 This chart shows the exponential growth in COVID-19 cases in Ontario as
-of 2020-03-17 15:08:20. To date there are 185 cases of COVID-19 as
+of 2020-03-18 13:59:16. To date there are 212 cases of COVID-19 as
 reported by the Ontario government.
 
 ``` r
@@ -57,41 +64,28 @@ Most of cases are reported in Toronto however the virus is spreading to
 other regions.
 
 ``` r
-df %>% 
+cases_by_region <- df %>% 
   group_by (Date, Public_Health_Unit) %>% 
   count () %>% 
   group_by (Public_Health_Unit) %>% 
-  mutate (cumsum = cumsum (n)) %>% 
-  arrange (Public_Health_Unit) %>% 
-  ggplot (aes (x = Date, y = cumsum, colour = Public_Health_Unit)) +
+  mutate (cumsum = cumsum (n)) %>%
+  arrange (Public_Health_Unit, Date ) %>% 
+  mutate (date_first_case = min (Date)) %>% 
+  ungroup() %>% 
+  mutate (label = parse_factor(Public_Health_Unit),
+          label = fct_reorder(label, date_first_case)) 
+
+cases_by_region %>%  
+  ggplot (aes (x = Date, y = cumsum, colour = label)) +
   geom_line (aes (group = 1)) +
   geom_point(size = 1) +
   geom_text(aes (label = cumsum), 
             vjust = -1, 
             size = 3, 
             colour = "black") +
-  facet_wrap(~ Public_Health_Unit, 
-             ncol = 3) +
+  facet_wrap(~label, 
+             ncol = 1) +
   theme (legend.position = "none")
 ```
-
-    ## geom_path: Each group consists of only one observation. Do you need to adjust
-    ## the group aesthetic?
-    ## geom_path: Each group consists of only one observation. Do you need to adjust
-    ## the group aesthetic?
-    ## geom_path: Each group consists of only one observation. Do you need to adjust
-    ## the group aesthetic?
-    ## geom_path: Each group consists of only one observation. Do you need to adjust
-    ## the group aesthetic?
-    ## geom_path: Each group consists of only one observation. Do you need to adjust
-    ## the group aesthetic?
-    ## geom_path: Each group consists of only one observation. Do you need to adjust
-    ## the group aesthetic?
-    ## geom_path: Each group consists of only one observation. Do you need to adjust
-    ## the group aesthetic?
-    ## geom_path: Each group consists of only one observation. Do you need to adjust
-    ## the group aesthetic?
-    ## geom_path: Each group consists of only one observation. Do you need to adjust
-    ## the group aesthetic?
 
 ![](Cases-Over-Time_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->

@@ -3,12 +3,12 @@ title: "Ontario COVID-19 Dataset"
 output: github_document
 ---
 
-## Load in the data
-```{r load_libraries, include=FALSE}
+## Load Libraries
+```{r load_libraries, include=TRUE}
 knitr::opts_chunk$set(echo = TRUE)
 
-library(tidyverse)
-library(lubridate)
+suppressPackageStartupMessages(library(tidyverse))
+suppressPackageStartupMessages(library(lubridate))
 
 ```
 
@@ -50,22 +50,28 @@ df %>%
 ## Cases Reported by Health Unit
 Most of cases are reported in Toronto however the virus is spreading to other regions. 
 
-```{r fig.height=12}
-df %>% 
+```{r fig.height=20, message=FALSE}
+cases_by_region <- df %>% 
   group_by (Date, Public_Health_Unit) %>% 
   count () %>% 
   group_by (Public_Health_Unit) %>% 
-  mutate (cumsum = cumsum (n)) %>% 
-  arrange (Public_Health_Unit) %>% 
-  ggplot (aes (x = Date, y = cumsum, colour = Public_Health_Unit)) +
+  mutate (cumsum = cumsum (n)) %>%
+  arrange (Public_Health_Unit, Date ) %>% 
+  mutate (date_first_case = min (Date)) %>% 
+  ungroup() %>% 
+  mutate (label = parse_factor(Public_Health_Unit),
+          label = fct_reorder(label, date_first_case)) 
+
+cases_by_region %>%  
+  ggplot (aes (x = Date, y = cumsum, colour = label)) +
   geom_line (aes (group = 1)) +
   geom_point(size = 1) +
   geom_text(aes (label = cumsum), 
             vjust = -1, 
             size = 3, 
             colour = "black") +
-  facet_wrap(~ Public_Health_Unit, 
-             ncol = 3) +
+  facet_wrap(~label, 
+             ncol = 1) +
   theme (legend.position = "none")
 
 ```

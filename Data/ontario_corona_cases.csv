@@ -184,3 +184,30 @@ Case_number,age_gender,Public_Health_Unit,Hospital,Transmission,Status,Date
 183,pending,Middlesex London,pending,pending,self-isolating,2020-03-17
 184,pending,Middlesex London,pending,pending,self-isolating,2020-03-17
 185,60s Male,York,Southlake,travel (Costa Rica),self-isolating,2020-03-17
+186,70s Male,Simcoe Muskoka,Royal Victoria,close contact,deceased,2020-03-17
+187,40s Female,"Kingston, Frontenac and Lennox & Addington",Hotel Dieu Hospital,travel (Spain),self-isolating,2020-03-17
+188,60s Female,"Kingston, Frontenac and Lennox & Addington",Hotel Dieu Hospital,travel (Barbados),self-isolating,2020-03-17
+189,40s Male,"Kingston, Frontenac and Lennox & Addington",pending,travel (UK),self-isolating,2020-03-17
+190,50s Female,Halton,,travel (Caribbean),self-isolating,2020-03-18
+191,20s Female,York,,close contact,self-isolating,2020-03-18
+192,20s Male,Peel,,"travel (Europe), close contact",self-isolating,2020-03-18
+193,50s Female,Toronto,,"travel (USA), close contact",self-isolating,2020-03-18
+194,30s Male,Toronto,,travel (Brazil),self-isolating,2020-03-18
+195,50s Female,Halton,,"travel (USA, Carribean)",self-isolating,2020-03-18
+196,50s Female,Halton,,"travel (USA), close contact",self-isolating,2020-03-18
+197,60s Female,Peel,,close contact,self-isolating,2020-03-18
+198,50s Male,Toronto,,"Travel (Japan, UK, Germany)",self-isolating,2020-03-18
+199,40s Male,Halton,,pending,self-isolating,2020-03-18
+200,40s Female,Waterloo,,"travel (Pakistan, Turkey)",self-isolating,2020-03-18
+201,70s Male,Hamilton,,travel (Mexico),self-isolating,2020-03-18
+202,20s Male,Ottawa,,travel (USA),self-isolating,2020-03-18
+203,60s Female,Middlesex London,,pending,self-isolating,2020-03-18
+204,30s Female,Hamilton,,travel (Carribean),self-isolating,2020-03-18
+205,50s Male,Chatham Kent,,travel (Carribean),self-isolating,2020-03-18
+206,60s Male,Grey Bruce,,travel (India),self-isolating,2020-03-18
+207,60s Male,Simcoe Muskoka,,travel (Austria),self-isolating,2020-03-18
+208,40s Female,Brant,,travel (Mexico),self-isolating,2020-03-18
+209,50s Female,Algoma,,travel (USA),self-isolating,2020-03-18
+210,pending,pending,,pending,self-isolating,2020-03-18
+211,pending,pending,,pending,self-isolating,2020-03-18
+212,pending,pending,,pending,self-isolating,2020-03-18
