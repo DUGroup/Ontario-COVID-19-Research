@@ -213,3 +213,46 @@ Case_number,age_gender,Public_Health_Unit,Hospital,Transmission,Status,Date
 212,pending,pending,,pending,self-isolating,2020-03-18
 213,50s Male,Niagara,,travel (pending),self-isolating,2020-03-18
 214,80s Female,Chatham Kent,,travel (USA),self-isolating,2020-03-18
+215,40s Male,Ottawa,,"travel (Spain, Belgium, Canary Islands), close contact",self-isolating,2020-03-19
+216,60s Female,Ottawa,,"travel (Germany, Malta)",self-isolating,2020-03-19
+217,60s Male,Eastern Ontario,,travel (UK),self-isolating,2020-03-19
+218,50s Female,Halton,,"travel (Spain, Finland)",self-isolating,2020-03-19
+219,50s Male,Halton,,"travel (USA, San Juan)",self-isolating,2020-03-19
+220,50s Female,Peel,,"travel (cruise), close contact",pending,2020-03-19
+221,60s Female,Hamilton,,travel (USA),self-isolating,2020-03-19
+222,20s Male,Toronto,,travel (England),self-isolating,2020-03-19
+223,60s Male,Hamilton,,"Travel (USA), close contact",self-isolating,2020-03-19
+224,20s Male,Toronto,,pending,self-isolating,2020-03-19
+225,20s Female,Waterloo,,close contact,self-isolating,2020-03-19
+226,40s Male,Toronto,,pending,pending,2020-03-19
+227,30s Female,Toronto,,pending,pending,2020-03-19
+228,20s Female,Toronto,,pending,pending,2020-03-19
+229,20s Male,Toronto,,pending,pending,2020-03-19
+230,80s Male,Durham,,pending,hospitalized,2020-03-19
+231,40s Male,Toronto,,pending,pending,2020-03-19
+232,30s Female,Toronto,,pending,pending,2020-03-19
+233,50s Female,Peel,,travel (Manila),self-isolating,2020-03-19
+234,50s Female,Peel,,travel (cruise),pending,2020-03-19
+235,70s Male,Haliburton Kawartha,,travel (Europe),pending,2020-03-19
+236,pending,pending,,pending,pending,2020-03-19
+237,pending,pending,,pending ,pending,2020-03-19
+238,pending,pending,,pending ,pending,2020-03-19
+239,pending,pending,,pending,pending,2020-03-19
+240,pending,pending,,pending ,pending,2020-03-19
+241,pending,pending,,pending ,pending,2020-03-19
+242,pending,pending,,pending,pending,2020-03-19
+243,pending,pending,,pending ,pending,2020-03-19
+244,pending,pending,,pending ,pending,2020-03-19
+245,pending,pending,,pending,pending,2020-03-19
+246,pending,pending,,pending ,pending,2020-03-19
+247,pending,pending,,pending ,pending,2020-03-19
+248,pending,pending,,pending,pending,2020-03-19
+249,pending,pending,,pending ,pending,2020-03-19
+250,pending,pending,,pending,pending,2020-03-19
+251,pending,pending,,pending ,pending,2020-03-19
+252,pending,pending,,pending ,pending,2020-03-19
+252,pending,pending,,pending,pending,2020-03-19
+254,pending,pending,,pending ,pending,2020-03-19
+255,pending,pending,,pending ,pending,2020-03-19
+256,pending,pending,,pending,pending,2020-03-19
+257,pending,pending,,pending ,pending,2020-03-19
