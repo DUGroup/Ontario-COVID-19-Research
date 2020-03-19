@@ -2,9 +2,11 @@ library(shiny)
 library(plotly)
 library(tidyverse)
 library(googlesheets4)
+library(janitor)
+library(maptools)
 
 # Load Main Data Set
-df <- read_csv("../Data/ontario_corona_cases.csv")
+df <- read_csv("Data/ontario_corona_cases.csv")
 
 df_province <- df %>% 
   group_by (Date) %>% 
@@ -41,33 +43,33 @@ cases_by_region <- dates_all %>%
 #provincial report data extract and wrangling
 #############################################
 
-Provincial.Reporting <- read_sheet("https://docs.google.com/spreadsheets/d/1Y3_qYkTJK6Vnhw3RCOhOiwafm4-PQxd5l0Hxk4x1ZxE/edit?ts=5e6f7e06#gid=0", 
-                                   sheet = 1)
-
-Ontario.Reporting <- Provincial.Reporting %>% clean_names()
-
-Ontario.Reporting <- Ontario.Reporting %>% mutate(patient_age_and_gender = str_to_title(patient_age_and_gender),
-                                                  
-                                                  gender = ifelse(str_detect(patient_age_and_gender, "Male"), "Male", 
-                                                                  ifelse(str_detect(patient_age_and_gender, "Female"), "Female", 
-                                                                         NA))) %>% 
-  cbind(age = as.numeric(gsub("\\D", "", Ontario.Reporting$patient_age_and_gender))) %>% 
-  mutate(age = ifelse(!is.na(age), paste0(age, "-", age + 9), NA)) %>% 
-  select(-patient_age_and_gender, - https_www_ontario_ca_page_2019_novel_coronavirus_number_section_0)
-
-region.summary <- Ontario.Reporting %>% count(public_health_unit, name = "Cases")
-
-sp.Canada <- readShapeSpatial('C:/Users/mn209073/Documents/March Break/Coronavirus Analysis/gcd_000a06a_e/gcd_000a07a_e.shp', 
-                              proj4string = CRS("+proj=longlat +datum=WGS84") )
-#slotNames(sp.Canada)
-#names(sp.Canada@data)
-#head(sp.Canada@data, 5)
-sp.Ontario = sp.Canada[sp.Canada@data$PRNAME == "Ontario",]
-
-sp.Ontario.df <- fortify(sp.Ontario, region ="CDNAME")
-
-#join cases count to the shapefile by region name
-sp.Ontario.COVID = left_join(x = sp.Ontario.df, y = region.summary, by = c("id" = "public_health_unit"))
+# Provincial.Reporting <- read_sheet("https://docs.google.com/spreadsheets/d/1Y3_qYkTJK6Vnhw3RCOhOiwafm4-PQxd5l0Hxk4x1ZxE/edit?ts=5e6f7e06#gid=0", 
+#                                    sheet = 1)
+# 
+# Ontario.Reporting <- Provincial.Reporting %>% clean_names()
+# 
+# Ontario.Reporting <- Ontario.Reporting %>% mutate(patient_age_and_gender = str_to_title(patient_age_and_gender),
+#                                                   
+#                                                   gender = ifelse(str_detect(patient_age_and_gender, "Male"), "Male", 
+#                                                                   ifelse(str_detect(patient_age_and_gender, "Female"), "Female", 
+#                                                                          NA))) %>% 
+#   cbind(age = as.numeric(gsub("\\D", "", Ontario.Reporting$patient_age_and_gender))) %>% 
+#   mutate(age = ifelse(!is.na(age), paste0(age, "-", age + 9), NA)) %>% 
+#   select(-patient_age_and_gender, - https_www_ontario_ca_page_2019_novel_coronavirus_number_section_0)
+# 
+# region.summary <- Ontario.Reporting %>% count(public_health_unit, name = "Cases")
+# 
+# sp.Canada <- readShapeSpatial('C:/Users/mn209073/Documents/March Break/Coronavirus Analysis/gcd_000a06a_e/gcd_000a07a_e.shp', 
+#                               proj4string = CRS("+proj=longlat +datum=WGS84") )
+# #slotNames(sp.Canada)
+# #names(sp.Canada@data)
+# #head(sp.Canada@data, 5)
+# sp.Ontario = sp.Canada[sp.Canada@data$PRNAME == "Ontario",]
+# 
+# sp.Ontario.df <- fortify(sp.Ontario, region ="CDNAME")
+# 
+# #join cases count to the shapefile by region name
+# sp.Ontario.COVID = left_join(x = sp.Ontario.df, y = region.summary, by = c("id" = "public_health_unit"))
 
 
 # Begin Shiny App
@@ -79,7 +81,7 @@ ui <- fluidPage(
     # Ooutput with tabs
     tabsetPanel(type = "tabs",
                 tabPanel("Background",
-                         h3("Data User Group (DUG)"),
+                         h3("Ontario Data User Group (DUG)"),
                          p("We are a group of researchers and analysts who are interested in data science and would like to use our expertise to contribute to the understanding of COVID-19 in our communities."),
                          
                          h3("Looking for data"),
@@ -121,14 +123,15 @@ ui <- fluidPage(
                          ),
                 tabPanel("Ontario Map", 
                          h3("Ontario Map"),
-                         p("Plot 1 shows the number of confirmed COVID-19 cases in Ontario by census division."),
-                         br(),
-                         plotlyOutput('plot3', width = "100%"))
-                )
-    
-
+                         h4("Coming soon!"),
+                         #p("Plot 1 shows the number of confirmed COVID-19 cases in Ontario by census division."),
+                         #br(),
+                         #plotlyOutput('plot3', width = "100%")
+                         )
+    )
   )
-)
+  )
+
 
 
 server <- function(input, output) {
@@ -152,7 +155,7 @@ server <- function(input, output) {
     plot2 <- plot_ly(cases_by_region, 
                      x = ~Date, 
                      y = ~Cases,
-                     width = 1200, height = 400) %>% 
+                     width = 1200, height = 750) %>% 
       add_lines (color = ~Public_Health_Unit) %>% 
       layout(
         title = "Total Number of COVID-19 Cases by Public Health Unit",

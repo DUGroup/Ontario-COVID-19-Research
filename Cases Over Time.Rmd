@@ -27,7 +27,7 @@ df <- read_csv("Data/ontario_corona_cases.csv")
 
 As of `r Sys.time()` there are `r length(df$Case_number)` cases of COVID-19 as reported by the Ontario government. The following chart shows the exponential growth in COVID-19 cases in Ontario.  
 
-```{r}
+```{r fig.width=10}
 current_time <- Sys.time()
 
 df %>% 
@@ -44,7 +44,8 @@ df %>%
         x = "Date Reported",
         y = "Number of Cases") +
   geom_text (aes (label = cumsum), 
-             vjust = -1) +
+             vjust = -1, 
+             size = 2) +
   annotate("text", x = as.Date("2020-02-01"), y = length(df$Case_number) - 5, 
            label = paste0("Current as of\n", current_time )
            )

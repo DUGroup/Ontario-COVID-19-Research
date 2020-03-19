@@ -1,0 +1,12 @@
+name: Ontario-COVID-19-Research
+title: Ontario-COVID-19-Research
+username:
+account: gregrousell
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1968194
+bundleId: 2899660
+url: https://gregrousell.shinyapps.io/Ontario-COVID-19-Research/
+when: 1584653643.61529
+asMultiple: FALSE
+asStatic: FALSE
