@@ -6,7 +6,8 @@ library(janitor)
 library(maptools)
 
 # Load Main Data Set
-df <- read_csv("Data/ontario_corona_cases.csv")
+df <- read_csv("ontario_corona_cases.csv")
+dates_all <- read_csv ("dates_all.csv")
 
 df_province <- df %>% 
   group_by (Date) %>% 
@@ -14,22 +15,6 @@ df_province <- df %>%
   ungroup() %>% 
   mutate (cumsum = cumsum(n),
           region = "Province") 
-
-# Create data frame of all dates and Public Health Units
-names <- unique(df$Public_Health_Unit)
-
-for (i in names) {
-  assign (paste0(i), 
-          seq (as.Date("2020-01-25"), Sys.Date(), "days") %>% 
-            data.frame() %>% 
-            rename (Date = 1) %>% 
-            mutate (Public_Health_Unit = i)
-  )
-}
-
-names_list <- lapply(names, get)
-dates_all <- do.call(rbind, names_list)
-remove(list = names)
 
 # Create master data frame
 cases_by_region <- dates_all %>% 
@@ -155,7 +140,7 @@ server <- function(input, output) {
     plot2 <- plot_ly(cases_by_region, 
                      x = ~Date, 
                      y = ~Cases,
-                     width = 1200, height = 750) %>% 
+                     width = 1200, height = 600) %>% 
       add_lines (color = ~Public_Health_Unit) %>% 
       layout(
         title = "Total Number of COVID-19 Cases by Public Health Unit",

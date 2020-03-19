@@ -1,0 +1,12 @@
+name: COVID-19
+title: COVID-19
+username:
+account: gregrousell
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1968386
+bundleId: 2899808
+url: https://gregrousell.shinyapps.io/COVID-19/
+when: 1584655712.79897
+asMultiple: FALSE
+asStatic: FALSE
