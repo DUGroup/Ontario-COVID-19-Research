@@ -1,0 +1,161 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r, include = FALSE}
+  knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+```
+
+```{r load packages, include = FALSE}
+library(googlesheets4)
+library(data.table)
+library(dplyr)
+library(lubridate)
+library(janitor)
+library(RODBC)
+library(tidyr)
+library(stringr)
+library(ggplot2)
+library(kableExtra)
+library(patchwork)
+
+library(rgeos)
+library(maptools)
+library(ggmap)
+library(ggiraph)
+library(plotly)
+```
+
+```{r load datasets, include = FALSE}
+Provincial.Reporting <- read_sheet("https://docs.google.com/spreadsheets/d/1Y3_qYkTJK6Vnhw3RCOhOiwafm4-PQxd5l0Hxk4x1ZxE/edit?ts=5e6f7e06#gid=0", 
+                   sheet = 1)
+Wikipedia <- read_sheet("https://docs.google.com/spreadsheets/d/1Y3_qYkTJK6Vnhw3RCOhOiwafm4-PQxd5l0Hxk4x1ZxE/edit?ts=5e6f7e06#gid=0", 
+                                   sheet = 2)
+Wikipedia.National <- read_sheet("https://docs.google.com/spreadsheets/d/1Y3_qYkTJK6Vnhw3RCOhOiwafm4-PQxd5l0Hxk4x1ZxE/edit?ts=5e6f7e06#gid=0", 
+                                   sheet = 3)
+RegionalReporting <- read_sheet("https://docs.google.com/spreadsheets/d/1Y3_qYkTJK6Vnhw3RCOhOiwafm4-PQxd5l0Hxk4x1ZxE/edit?ts=5e6f7e06#gid=0", 
+                                   sheet = 4)
+Cases.Ontario <- read_sheet("https://docs.google.com/spreadsheets/d/1Y3_qYkTJK6Vnhw3RCOhOiwafm4-PQxd5l0Hxk4x1ZxE/edit?ts=5e6f7e06#gid=0", 
+                                   sheet = 5)
+
+Region.Coordinates <- read_sheet("https://docs.google.com/spreadsheets/d/1Y3_qYkTJK6Vnhw3RCOhOiwafm4-PQxd5l0Hxk4x1ZxE/edit?ts=5e6f7e06#gid=0", 
+                                   sheet = 6)
+
+```
+
+```{r clean gender & age, fig.height = 13, fig.width = 7, echo = FALSE}
+Ontario.Reporting <- Provincial.Reporting %>% clean_names()
+
+Ontario.Reporting <- Ontario.Reporting %>% mutate(patient_age_and_gender = str_to_title(patient_age_and_gender),
+                                                  
+                                                  gender = ifelse(str_detect(patient_age_and_gender, "Male"), "Male", 
+                                                           ifelse(str_detect(patient_age_and_gender, "Female"), "Female", 
+                                                                  NA))) %>% 
+                                          cbind(age = as.numeric(gsub("\\D", "", Ontario.Reporting$patient_age_and_gender))) %>% 
+                                          mutate(age = ifelse(!is.na(age), paste0(age, "-", age + 9), NA)) %>% 
+  select(-patient_age_and_gender, - https_www_ontario_ca_page_2019_novel_coronavirus_number_section_0)
+#Ontario.Reporting$public_heath_unit_recode
+# table(Ontario.Reporting$public_health_unit)
+# table(Ontario.Reporting$hospital_if_applicable)
+# table(Ontario.Reporting$gender)
+# View(table(Ontario.Reporting$transmission_community_travel_or_close_contact))
+# as.matrix(table(Ontario.Reporting$public_health_unit))
+
+# ggplot(data = Ontario.Reporting, aes(x = gender)) + geom_histogram(stat = "count")
+# 
+count.by.region.plot <- ggplot(data = Ontario.Reporting, aes(x = forcats::fct_infreq(public_health_unit_recode))) +
+  geom_bar(stat = "count", fill = "#0056a2")  +
+  labs(title = "Number of Confirmed COVID-19 Cases by Ontario Region",
+       x = "Region", y = "Cases") + 
+  geom_text(stat='count', aes(label=..count..), vjust=-0.5) + 
+  theme(axis.text.x = element_text(angle = 40, hjust = 1, vjust = 1)) + 
+  expand_limits(y = 100)
+
+count.by.gender.plot <- ggplot(data = Ontario.Reporting, aes(x = forcats::fct_infreq(gender))) +
+  geom_bar(stat = "count", fill = "#0056a2")  +
+  labs(title = "Number of Confirmed COVID-19 Cases by Gender",
+       x = "Gender", y = "Cases") + 
+  geom_text(stat='count', aes(label=..count..), vjust=-0.5) + 
+  theme(axis.text.x = element_text(angle = 40, hjust = 1, vjust = 1)) + 
+  expand_limits(y = 125)
+
+count.by.age.plot <- ggplot(data = Ontario.Reporting, aes(x = age)) +
+  geom_bar(stat = "count", fill = "#0056a2")  +
+  labs(title = "Number of Confirmed COVID-19 Cases by Age",
+       x = "Gender", y = "Cases") + 
+  geom_text(stat='count', aes(label=..count..), vjust=-0.5) + 
+  theme(axis.text.x = element_text(angle = 40, hjust = 1, vjust = 1)) + 
+  expand_limits(y = 125)
+
+count.by.region.plot /count.by.gender.plot /count.by.age.plot
+
+write.csv(Ontario.Reporting, "Ontario.Reporting.csv")
+```
+
+```{r bar plot by region, echo = FALSE}
+  region.summary <- Ontario.Reporting %>% count(public_health_unit, name = "Cases")
+
+  #bar plot, count by region
+  # ggplot(data = region.summary, aes(x = reorder(public_health_unit, n), y = n, na.rm = T)) +
+  #   geom_col() +
+  #   geom_text(aes(label = n), hjust = -0.1) +
+  #   theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.3)) + 
+  #   labs(title = "Number of Confirmed (COVID-19) Cases by Ontario Region",
+  #        x = "Region", y = "Cases") +  coord_flip()
+```
+
+```{r plotly map plot by region, fig.width = 8, fig.height = 8, echo = FALSE}
+#read in shape file (census divisions) from stats canada (https://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/bound-limit-2006-eng.cfm)
+  sp.Canada <- readShapeSpatial('C:/Users/mn209073/Documents/March Break/Coronavirus Analysis/gcd_000a06a_e/gcd_000a07a_e.shp', 
+                                proj4string = CRS("+proj=longlat +datum=WGS84") )
+  #slotNames(sp.Canada)
+  #names(sp.Canada@data)
+  #head(sp.Canada@data, 5)
+  sp.Ontario = sp.Canada[sp.Canada@data$PRNAME == "Ontario",]
+  
+  sp.Ontario.df <- fortify(sp.Ontario, region ="CDNAME")
+  
+  #join cases count to the shapefile by region name
+  sp.Ontario.COVID = left_join(x = sp.Ontario.df, y = region.summary, by = c("id" = "public_health_unit"))
+  
+  #sp.Ontario.COVID$breaks <- cut(sp.Ontario.COVID$Cases, 5)
+  
+  #table(sp.Ontario.COVID$n, exclude = NULL)
+  
+  #plot map
+  p <- ggplot(data = sp.Ontario.COVID, aes(x=long, y=lat, group = group)) + 
+    geom_polygon(aes(fill = Cases, group = id), color = 'black') + scale_fill_gradient(low = "yellow", high = "red")+
+    labs(title = "(COVID-19) Cases by Ontario Region")
+  
+  fig <- ggplotly(p, height = 750)
+  fig
+
+```
+
+```{r bubble map, fig.width = 8, fig.height = 8, echo = FALSE}
+    Ontario.Reporting <- merge(Ontario.Reporting, Region.Coordinates, by.x = "public_health_unit_recode", by.y = "Region")
+
+    Ontario.Reporting$Long <- as.numeric(Ontario.Reporting$Long) * -1
+    Ontario.Reporting$Lat <- as.numeric(Ontario.Reporting$Lat)
+    
+    summary.by.region <- Ontario.Reporting %>% count(public_health_unit_recode)
+    
+    Ontario.Reporting <- merge(Ontario.Reporting, summary.by.region)
+    
+    library(mapproj)
+    library(viridis)
+    
+    plot <- Ontario.Reporting %>% 
+      arrange(desc(n)) %>%
+    ggplot() +
+      geom_polygon(data = sp.Ontario.COVID, aes(x=long, y = lat, group = group), fill = "grey", color = "black") +
+      geom_point(data=Ontario.Reporting, aes(x=Long, y=Lat, size = n, color = n), alpha = 0.5) + 
+      scale_size_continuous(range=c(1,12))
+    
+    fig <- ggplotly(plot, height = 800)
+    fig
+    
+```
