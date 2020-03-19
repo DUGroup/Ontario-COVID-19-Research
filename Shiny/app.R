@@ -1,9 +1,10 @@
 library(shiny)
 library(plotly)
 library(tidyverse)
+library(googlesheets4)
 
 # Load Main Data Set
-df <- read_csv("~/Dropbox/COVID-19/Ontario-COVID-19-Research/Data/ontario_corona_cases.csv")
+df <- read_csv("../Data/ontario_corona_cases.csv")
 
 df_province <- df %>% 
   group_by (Date) %>% 
@@ -35,6 +36,39 @@ cases_by_region <- dates_all %>%
   mutate(Cases = cumsum (!is.na(Case_number))) %>% 
   ungroup() %>% 
   mutate (Public_Health_Unit = parse_factor(Public_Health_Unit))
+
+#############################################
+#provincial report data extract and wrangling
+#############################################
+
+Provincial.Reporting <- read_sheet("https://docs.google.com/spreadsheets/d/1Y3_qYkTJK6Vnhw3RCOhOiwafm4-PQxd5l0Hxk4x1ZxE/edit?ts=5e6f7e06#gid=0", 
+                                   sheet = 1)
+
+Ontario.Reporting <- Provincial.Reporting %>% clean_names()
+
+Ontario.Reporting <- Ontario.Reporting %>% mutate(patient_age_and_gender = str_to_title(patient_age_and_gender),
+                                                  
+                                                  gender = ifelse(str_detect(patient_age_and_gender, "Male"), "Male", 
+                                                                  ifelse(str_detect(patient_age_and_gender, "Female"), "Female", 
+                                                                         NA))) %>% 
+  cbind(age = as.numeric(gsub("\\D", "", Ontario.Reporting$patient_age_and_gender))) %>% 
+  mutate(age = ifelse(!is.na(age), paste0(age, "-", age + 9), NA)) %>% 
+  select(-patient_age_and_gender, - https_www_ontario_ca_page_2019_novel_coronavirus_number_section_0)
+
+region.summary <- Ontario.Reporting %>% count(public_health_unit, name = "Cases")
+
+sp.Canada <- readShapeSpatial('C:/Users/mn209073/Documents/March Break/Coronavirus Analysis/gcd_000a06a_e/gcd_000a07a_e.shp', 
+                              proj4string = CRS("+proj=longlat +datum=WGS84") )
+#slotNames(sp.Canada)
+#names(sp.Canada@data)
+#head(sp.Canada@data, 5)
+sp.Ontario = sp.Canada[sp.Canada@data$PRNAME == "Ontario",]
+
+sp.Ontario.df <- fortify(sp.Ontario, region ="CDNAME")
+
+#join cases count to the shapefile by region name
+sp.Ontario.COVID = left_join(x = sp.Ontario.df, y = region.summary, by = c("id" = "public_health_unit"))
+
 
 # Begin Shiny App
 
@@ -84,7 +118,12 @@ ui <- fluidPage(
                          p("Plot 2 shows the growth in total cases for each of the Public Health Units (PHU). Double click on the name of the PHU to see the number of cases for that unit."),
                          br(),
                          plotlyOutput('plot2', width = "100%")
-                         )
+                         ),
+                tabPanel("Ontario Map", 
+                         h3("Ontario Map"),
+                         p("Plot 1 shows the number of confirmed COVID-19 cases in Ontario by census division."),
+                         br(),
+                         plotlyOutput('plot3', width = "100%"))
                 )
     
 
@@ -120,6 +159,14 @@ server <- function(input, output) {
         xaxis = list (title = "Date"),
         yaxis = list (title = "Number of Cases")
       )
+  )
+  
+  output$plot3 <- renderPlotly(
+    ggplotly(ggplot(data = sp.Ontario.COVID, aes(x=long, y=lat, group = group)) + 
+               geom_polygon(aes(fill = Cases, group = id), color = 'black') + #scale_fill_gradient(low = "yellow", high = "red")+
+               labs(title = "(COVID-19) Cases by Ontario Region"), 
+      height = 650, width = 650)
+    
   )
   
 }
