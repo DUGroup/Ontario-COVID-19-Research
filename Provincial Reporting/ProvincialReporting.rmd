@@ -1,8 +1,7 @@
 ---
-title: "R Notebook"
+title: "COVID-19 Ontario Provincial Reporting"
 output:
-  html_document:
-    df_print: paged
+  rmarkdown::github_document
 ---
 
 ```{r, include = FALSE}
@@ -92,7 +91,7 @@ count.by.age.plot <- ggplot(data = Ontario.Reporting, aes(x = age)) +
 
 count.by.region.plot /count.by.gender.plot /count.by.age.plot
 
-write.csv(Ontario.Reporting, "Ontario.Reporting.csv")
+#write.csv(Ontario.Reporting, "Ontario.Reporting.csv")
 ```
 
 ```{r bar plot by region, echo = FALSE}
@@ -127,7 +126,7 @@ write.csv(Ontario.Reporting, "Ontario.Reporting.csv")
   
   #plot map
   p <- ggplot(data = sp.Ontario.COVID, aes(x=long, y=lat, group = group)) + 
-    geom_polygon(aes(fill = Cases, group = id), color = 'black') + scale_fill_gradient(low = "yellow", high = "red")+
+    geom_polygon(aes(fill = Cases, group = id), color = 'black') + #scale_fill_gradient(low = "yellow", high = "red")+
     labs(title = "(COVID-19) Cases by Ontario Region")
   
   fig <- ggplotly(p, height = 750)
