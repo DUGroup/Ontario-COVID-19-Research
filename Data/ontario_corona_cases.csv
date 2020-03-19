@@ -211,3 +211,5 @@ Case_number,age_gender,Public_Health_Unit,Hospital,Transmission,Status,Date
 210,pending,pending,,pending,self-isolating,2020-03-18
 211,pending,pending,,pending,self-isolating,2020-03-18
 212,pending,pending,,pending,self-isolating,2020-03-18
+213,50s Male,Niagara,,travel (pending),self-isolating,2020-03-18
+214,80s Female,Chatham Kent,,travel (USA),self-isolating,2020-03-18

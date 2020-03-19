@@ -30,7 +30,7 @@ df <- read_csv("Data/ontario_corona_cases.csv")
 ## Total Cases in Ontario
 
 This chart shows the exponential growth in COVID-19 cases in Ontario as
-of 2020-03-18 14:03:24. To date there are 212 cases of COVID-19 as
+of 2020-03-18 14:44:15. To date there are 212 cases of COVID-19 as
 reported by the Ontario government.
 
 ``` r
@@ -64,7 +64,13 @@ Most of cases are reported in Toronto however the virus is spreading to
 other regions.
 
 ``` r
-cases_by_region <- df %>% 
+dates <- seq (as.Date("2020-01-25"), Sys.Date(), "days") %>% 
+  data.frame() %>% 
+  rename (Date = 1)
+  
+
+cases_by_region <- dates %>% 
+  left_join (df, by = c ("Date" = "Date")) %>% 
   group_by (Date, Public_Health_Unit) %>% 
   count () %>% 
   group_by (Public_Health_Unit) %>% 
@@ -75,7 +81,10 @@ cases_by_region <- df %>%
   mutate (label = parse_factor(Public_Health_Unit),
           label = fct_reorder(label, date_first_case)) 
 
-cases_by_region %>%  
+temp <- c("Toronto", "RichmondHill", "Grey Bruce")
+
+cases_by_region %>%
+  #dplyr::filter(Public_Health_Unit %in% temp) %>% 
   ggplot (aes (x = Date, y = cumsum, colour = label)) +
   geom_line (aes (group = 1)) +
   geom_point(size = 1) +
@@ -85,6 +94,7 @@ cases_by_region %>%
             colour = "black") +
   scale_y_continuous(limits = c(0, (max(cases_by_region$cumsum) + 5))) +
   facet_wrap(~label, 
+             scales = "free",
              ncol = 1) +
   theme (legend.position = "none")
 ```
