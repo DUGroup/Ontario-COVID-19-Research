@@ -126,7 +126,7 @@ count.by.region.plot /count.by.gender.plot /count.by.age.plot
   
   #plot map
   p <- ggplot(data = sp.Ontario.COVID, aes(x=long, y=lat, group = group)) + 
-    geom_polygon(aes(fill = Cases, group = id), color = 'black') + scale_fill_gradient(low = "yellow", high = "red")+
+    geom_polygon(aes(fill = Cases, group = id), color = 'black') + #scale_fill_gradient(low = "yellow", high = "red")+
     labs(title = "(COVID-19) Cases by Ontario Region")
   
   fig <- ggplotly(p, height = 750)
