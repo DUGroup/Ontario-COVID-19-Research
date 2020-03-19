@@ -47,9 +47,33 @@ ui <- fluidPage(
                 tabPanel("Background",
                          h3("Data User Group (DUG)"),
                          p("We are a group of researchers and analysts who are interested in data science and would like to use our expertise to contribute to the understanding of COVID-19 in our communities."),
+                         
                          h3("Looking for data"),
+                         
                          p("One of the challenges we encountered trying to understand the spread of COVID-19 was finding a data source in a format that is easily accessible for analysis.  When we were unable to locate such a file (and finding that the process to scrape data through R was too messy given the formats that the information has been released) we decided to take a manual approach.  Using a few different sources, we have compiled data tables which are easily accessible in R (our favorite) and Python."),
+                         
+                         h3("Opening the data from the source"),
+                         
+                         p("A ", a(href="https://docs.google.com/spreadsheets/d/1Y3_qYkTJK6Vnhw3RCOhOiwafm4-PQxd5l0Hxk4x1ZxE/edit?usp=sharing", "googlesheet"), "has been created and is being maintained using data from an Ontario government website and resources available on two Wikipedia pages. We will continue to update these tables until a more authoritative source of case records is made available, ideally by Public Health Ontario."),
+                         
+                         p("You can also access the data directly from DUG's ", a(href= "https://raw.githubusercontent.com/DUGroup/Ontario-COVID-19-Research/master/Data/ontario_corona_cases.csv", "github page.")),
+                         
+                         h3("Resources: An invitation to explore and dive deeper"),
+                         p("As we explore this data we will be sharing visualizations and insights on the Data User Group website. Our hope is that others will find our summaries useful.  We extend an open invitation to others interested in data science to engage in additional analysis and use this data set for your own exploration. A ", strong("github"), " has also been created which will include the R code of our members as well as a .csv file that will be updated regularly.  The ", strong ("googlesheet"), " will serve as our authoritative data source and the github will serve as our central repository for code.  We invite any who are interested to contribute to the github."),
+                         
+                         h3("Data Background and Sources"),
+                         p("The “Provincial Reporting” tab in the googelsheet is a compilation of data from this", strong("Ontario government website"), a(href = "https://www.ontario.ca/page/2019-novel-coronavirus#section-0)", "https://www.ontario.ca/page/2019-novel-coronavirus"), ". This webpage provides a table on new cases of COVID-19 diagnosed in the province.  Following are notes about the data that is published on this page:"),
+                         tags$ul(
+                           tags$li("Using the Wayback Machine, the earliest records that could be obtained began at case 32."),
+                           tags$li("The first 31 cases were then compiled by parsing the press releases available at the bottom of the page."),
+                           tags$li("Currently, case numbers 6, 16, 17 and 18 have not been found in the available press releases."),
+                           tags$li("Coding with respect to regional health unit appears to have changed over time.  A new column has been added with recoded health unit labels for consistency."),
+                           tags$li("On March 18th the website stopped posting the hospitals the cases are related to."),
+                           tags$li("The data in the googlesheet and github is updated daily from this website.")
+                         )
+                         
                          ),
+                
                 tabPanel("Ontario", 
                          h3("Ontario"),
                          p("Plot 1 shows the growth in total cases for all of Ontario."),
@@ -70,10 +94,6 @@ ui <- fluidPage(
 
 server <- function(input, output) {
   
-  x <- reactive({
-    cases_by_region %>% dplyr::filter(PHU == input$PHU)
-  })
-  
   output$plot1 <- renderPlotly(
     plot1 <- plot_ly(df_province, 
                      x = ~Date, 
@@ -83,9 +103,12 @@ server <- function(input, output) {
       layout(
         title = "Total Number of COVID-19 Cases in Ontario",
         xaxis = list (title = "Date"),
-        yaxis = list (title = "Number of Cases")
+        yaxis = list (title = "Number of Cases",
+                      range = c(0, max(df_province$cumsum) + 50)
+                      )
+        )
       )
-  )
+  
   output$plot2 <- renderPlotly(
     plot2 <- plot_ly(cases_by_region, 
                      x = ~Date, 
