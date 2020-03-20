@@ -307,3 +307,13 @@ Case_number,age_gender,Public_Health_Unit,Hospital,Transmission,Status,Date
 306,pending,pending,,pending ,pending,2020-03-20
 307,pending,pending,,pending,pending,2020-03-20
 308,pending,pending,,pending ,pending,2020-03-20
+309,pending,Middlesex London,,pending,self-isolating,2020-03-20
+310,pending,Middlesex London,,pending,self-isolating,2020-03-20
+311,pending,Middlesex London,,pending,self-isolating,2020-03-20
+312,pending,Middlesex London,,pending,self-isolating,2020-03-20
+313,pending,Middlesex London,,pending ,self-isolating,2020-03-20
+314,pending,Middlesex London,,pending,self-isolating,2020-03-20
+315,80s Male,Haliburton Kawartha,,pending,isolation in nursing home,2020-03-20
+316,90s Female,Haliburton Kawartha,,pending,isolation in nursing home,2020-03-20
+317,60s Male,Haliburton Kawartha,,pending,isolation in nursing home,2020-03-20
+318,50s Male,Porcupine,,travel,self-isolating,2020-03-20
