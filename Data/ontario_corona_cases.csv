@@ -233,7 +233,7 @@ Case_number,age_gender,Public_Health_Unit,Hospital,Transmission,Status,Date
 232,30s Female,Toronto,,pending,pending,2020-03-19
 233,50s Female,Peel,,travel (Manila),self-isolating,2020-03-19
 234,50s Female,Peel,,travel (cruise),pending,2020-03-19
-235,70s Male,Haliburton Kawartha,,travel (Europe),pending,2020-03-19
+235,70s Male,"Haliburton,Kawartha,Pine Ridge ",,travel (Europe),pending,2020-03-19
 236,pending,pending,,pending,pending,2020-03-19
 237,pending,pending,,pending ,pending,2020-03-19
 238,pending,pending,,pending ,pending,2020-03-19
