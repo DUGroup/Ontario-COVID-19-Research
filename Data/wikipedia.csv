@@ -1,0 +1,84 @@
+"","Region","Date","Cases","Change","Deaths","Resolved","https://www.google.com/maps/d/u/0/viewer?mid=1cWm99ZSIeceKzu97rk50ik32cSvvX4pa&ll=44.45836936528724%2C-79.37585575178662&z=8"
+"1","Toronto",2020-01-25,1,NA,0,NA,NA
+"2","Toronto",2020-03-12,32,31,0,NA,NA
+"3","Toronto",2020-03-13,44,12,0,NA,NA
+"4","Toronto",2020-03-14,53,9,0,NA,NA
+"5","Toronto",2020-03-15,67,14,0,NA,NA
+"6","Toronto",2020-03-16,78,11,0,NA,NA
+"7","Toronto",2020-03-17,104,26,0,4,NA
+"8","Toronto",2020-03-19,106,2,0,NA,NA
+"9","Peel",2020-03-13,11,NA,0,NA,NA
+"10","Peel",2020-03-14,12,1,0,NA,NA
+"11","Peel",2020-03-15,17,5,0,NA,NA
+"12","Peel",2020-03-16,21,4,0,NA,NA
+"13","Peel",2020-03-18,24,3,0,NA,NA
+"14","Peel",2020-03-19,26,2,0,NA,NA
+"15","York",2020-03-13,8,NA,0,NA,NA
+"16","York",2020-03-15,11,3,0,NA,NA
+"17","York",2020-03-16,16,5,0,NA,NA
+"18","York",2020-03-17,22,6,0,NA,NA
+"19","York",2020-03-18,24,2,0,NA,NA
+"20","York",2020-03-19,27,3,0,NA,NA
+"21","Ottawa",2020-03-11,1,NA,0,NA,NA
+"22","Ottawa",2020-03-12,2,1,0,NA,NA
+"23","Ottawa",2020-03-13,3,1,0,NA,NA
+"24","Ottawa",2020-03-14,5,2,0,NA,NA
+"25","Ottawa",2020-03-15,10,5,0,NA,NA
+"26","Ottawa",2020-03-16,13,3,0,NA,NA
+"27","Ottawa",2020-03-18,14,1,0,NA,NA
+"28","Ottawa",2020-03-19,16,2,0,NA,NA
+"29","Hamilton",2020-03-12,1,NA,0,NA,NA
+"30","Hamilton",2020-03-14,2,1,0,NA,NA
+"31","Hamilton",2020-03-15,5,3,0,NA,NA
+"32","Hamilton",2020-03-16,9,4,0,NA,NA
+"33","Hamilton",2020-03-17,14,5,0,NA,NA
+"34","Hamilton",2020-03-18,16,2,0,NA,NA
+"35","Hamilton",2020-03-19,18,2,0,NA,NA
+"36","Waterloo",2020-03-05,1,NA,0,NA,NA
+"37","Waterloo",2020-03-12,3,2,0,NA,NA
+"38","Waterloo",2020-03-13,4,1,0,NA,NA
+"39","Waterloo",2020-03-14,6,2,0,NA,NA
+"40","Waterloo",2020-03-15,8,2,0,NA,NA
+"41","Waterloo",2020-03-18,9,1,0,NA,NA
+"42","Waterloo",2020-03-19,12,3,0,NA,NA
+"43","Durham",2020-02-29,2,NA,0,NA,NA
+"44","Durham",2020-03-14,5,3,0,NA,NA
+"45","Durham",2020-03-15,7,2,0,NA,NA
+"46","Durham",2020-03-16,8,1,0,NA,NA
+"47","Durham",2020-03-18,10,2,0,NA,NA
+"48","Durham",2020-03-19,18,8,0,NA,NA
+"49","Halton",2020-03-11,1,NA,0,NA,NA
+"50","Halton",2020-03-12,2,1,0,NA,NA
+"51","Halton",2020-03-14,3,1,0,NA,NA
+"52","Halton",2020-03-16,4,1,0,NA,NA
+"53","Halton",2020-03-18,8,4,0,NA,NA
+"54","Halton",2020-03-19,11,3,0,NA,NA
+"55","Simcoe",2020-03-12,1,NA,0,NA,NA
+"56","Simcoe",2020-03-15,3,2,0,NA,NA
+"57","Simcoe",2020-03-18,4,1,0,NA,NA
+"58","Niagara",2020-03-13,1,NA,0,NA,NA
+"59","Niagara",2020-03-15,2,1,0,NA,NA
+"60","Niagara",2020-03-16,3,1,0,NA,NA
+"61","Niagara",2020-03-18,4,1,0,NA,NA
+"62","Grey-Bruce",2020-03-15,2,NA,0,NA,NA
+"63","Grey-Bruce",2020-03-18,3,1,0,NA,NA
+"64","Kawartha Lakes",2020-03-14,1,NA,0,NA,NA
+"65","Kawartha Lakes",2020-03-15,2,1,0,NA,NA
+"66","Kawartha Lakes",2020-03-17,3,1,0,NA,NA
+"67","London",2020-01-31,1,NA,0,NA,NA
+"68","London",2020-03-14,2,1,0,1,NA
+"69","London",2020-03-17,4,2,0,NA,NA
+"70","London",2020-03-18,5,1,0,NA,NA
+"71","Sudbury",2020-03-11,1,NA,0,NA,NA
+"72","Sudbury",2020-03-16,2,1,0,NA,NA
+"73","Northwestern Ontario",NA,1,NA,0,NA,NA
+"74","Perth County",2020-03-14,1,NA,0,NA,NA
+"75","Peterborough",NA,1,NA,0,NA,NA
+"76","Stormont, Dundas, Glengarry",2020-03-14,1,NA,0,NA,NA
+"77","Kingston-Frontenac-Lennox-Addington",2020-03-17,3,NA,0,NA,NA
+"78","Muskoka",2020-03-17,5,NA,1,NA,NA
+"79","Chatham-Kent",2020-03-18,2,NA,0,NA,NA
+"80","Algoma",2020-03-18,1,NA,0,NA,NA
+"81","Brant, Brantford",2020-03-18,1,NA,0,NA,NA
+"82","Wellington-Dufferi-Guelph",2020-03-15,1,NA,0,NA,NA
+"83","Prescott-Russell",2020-03-19,1,NA,0,NA,NA
