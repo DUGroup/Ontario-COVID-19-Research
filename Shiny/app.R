@@ -1,13 +1,18 @@
 library(shiny)
+library(shinydashboard)
 library(plotly)
 library(tidyverse)
 library(googlesheets4)
 library(janitor)
 library(maptools)
-
+library(sf)
 # Load Main Data Set
-df <- read_csv("ontario_corona_cases.csv")
-dates_all <- read_csv ("dates_all.csv")
+
+df <- read_csv ("https://raw.githubusercontent.com/DUGroup/Ontario-COVID-19-Research/master/Data/ontario_corona_cases.csv")
+
+dates_all <- read_csv("https://raw.githubusercontent.com/DUGroup/Ontario-COVID-19-Research/master/Data/dates_all.csv")
+
+prov_agg <- read_csv ("https://raw.githubusercontent.com/DUGroup/Ontario-COVID-19-Research/master/Data/provincial_aggregrate.csv")
 
 df_province <- df %>% 
   group_by (Date) %>% 
@@ -28,24 +33,27 @@ cases_by_region <- dates_all %>%
 #provincial report data extract and wrangling
 #############################################
 
-# Provincial.Reporting <- read_sheet("https://docs.google.com/spreadsheets/d/1Y3_qYkTJK6Vnhw3RCOhOiwafm4-PQxd5l0Hxk4x1ZxE/edit?ts=5e6f7e06#gid=0", 
-#                                    sheet = 1)
+# Provincial.Reporting <- df
 # 
 # Ontario.Reporting <- Provincial.Reporting %>% clean_names()
 # 
-# Ontario.Reporting <- Ontario.Reporting %>% mutate(patient_age_and_gender = str_to_title(patient_age_and_gender),
-#                                                   
-#                                                   gender = ifelse(str_detect(patient_age_and_gender, "Male"), "Male", 
-#                                                                   ifelse(str_detect(patient_age_and_gender, "Female"), "Female", 
-#                                                                          NA))) %>% 
-#   cbind(age = as.numeric(gsub("\\D", "", Ontario.Reporting$patient_age_and_gender))) %>% 
-#   mutate(age = ifelse(!is.na(age), paste0(age, "-", age + 9), NA)) %>% 
-#   select(-patient_age_and_gender, - https_www_ontario_ca_page_2019_novel_coronavirus_number_section_0)
+# Ontario.Reporting <- Ontario.Reporting %>% 
+#   mutate(patient_age_and_gender = str_to_title(age_gender),
+#          gender = ifelse(str_detect(patient_age_and_gender, "Male"), "Male",
+#                          ifelse(str_detect(patient_age_and_gender, "Female"), "Female",
+#                                                                          NA))) %>%
+#   cbind(age = as.numeric(gsub("\\D", "", Ontario.Reporting$age_gender))) %>%
+#   mutate(age = ifelse(!is.na(age), paste0(age, "-", age + 9), NA)) 
 # 
 # region.summary <- Ontario.Reporting %>% count(public_health_unit, name = "Cases")
+#  
+# sp.Canada <- rgdal::readOGR ("/Users/gregrousell/Desktop/gcd_000a07a_e.shp")
 # 
-# sp.Canada <- readShapeSpatial('C:/Users/mn209073/Documents/March Break/Coronavirus Analysis/gcd_000a06a_e/gcd_000a07a_e.shp', 
-#                               proj4string = CRS("+proj=longlat +datum=WGS84") )
+# 
+#   
+#   "C:/Users/mn209073/Documents/March Break/Coronavirus Analysis/gcd_000a06a_e/gcd_000a07a_e.shp")
+
+
 # #slotNames(sp.Canada)
 # #names(sp.Canada@data)
 # #head(sp.Canada@data, 5)
@@ -93,29 +101,45 @@ ui <- fluidPage(
                            tags$li("The data in the googlesheet and github is updated daily from this website.")
                          )
                          
-                         ),
+                ),
                 
                 tabPanel("Ontario", 
                          h3("Ontario"),
-                         p("Plot 1 shows the growth in total cases for all of Ontario."),
-                         br(),
-                         plotlyOutput('plot1', width = "100%")),
+                         fluidRow(p("Data current as of", Sys.Date())),
+                         fluidRow(
+                           column(3,
+                                  infoBox(title = h4("Confirmed Cases"),
+                                          value = h4(length(df$Case_number)))),
+                           column(3, align = "center",
+                                  infoBox(title = h4("Resolved Cases"), 
+                                          value = h4(prov_agg[4,2]))),
+                           column(3, 
+                                  infoBox(title = h4("Number Tests"), 
+                                          value = h4(prov_agg[6,2]))),
+                           column(3,
+                                  infoBox(title = h4("Number Deaths"), 
+                                          value = h4(prov_agg[5,2])))
+                         ),
+                         fluidRow(
+                           p("Plot 1 shows the growth in total cases for all of Ontario."),
+                           br(),
+                           plotlyOutput('plot1', width = "100%"))),
                 tabPanel("Public Heatlh Units",
                          h3("Public Health Units"),
                          p("Plot 2 shows the growth in total cases for each of the Public Health Units (PHU). Double click on the name of the PHU to see the number of cases for that unit."),
                          br(),
                          plotlyOutput('plot2', width = "100%")
-                         ),
+                ),
                 tabPanel("Ontario Map", 
                          h3("Ontario Map"),
                          h4("Coming soon!"),
                          #p("Plot 1 shows the number of confirmed COVID-19 cases in Ontario by census division."),
                          #br(),
                          #plotlyOutput('plot3', width = "100%")
-                         )
+                )
     )
   )
-  )
+)
 
 
 
@@ -132,9 +156,9 @@ server <- function(input, output) {
         xaxis = list (title = "Date"),
         yaxis = list (title = "Number of Cases",
                       range = c(0, max(df_province$cumsum) + 50)
-                      )
         )
       )
+  )
   
   output$plot2 <- renderPlotly(
     plot2 <- plot_ly(cases_by_region, 
@@ -153,7 +177,7 @@ server <- function(input, output) {
     ggplotly(ggplot(data = sp.Ontario.COVID, aes(x=long, y=lat, group = group)) + 
                geom_polygon(aes(fill = Cases, group = id), color = 'black') + #scale_fill_gradient(low = "yellow", high = "red")+
                labs(title = "(COVID-19) Cases by Ontario Region"), 
-      height = 650, width = 650)
+             height = 650, width = 650)
     
   )
   
