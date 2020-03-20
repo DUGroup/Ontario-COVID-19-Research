@@ -54,6 +54,7 @@ Date,Public_Health_Unit
 2020-03-17,Toronto
 2020-03-18,Toronto
 2020-03-19,Toronto
+2020-03-20,Toronto
 2020-01-25,Middlesex London
 2020-01-26,Middlesex London
 2020-01-27,Middlesex London
@@ -109,6 +110,7 @@ Date,Public_Health_Unit
 2020-03-17,Middlesex London
 2020-03-18,Middlesex London
 2020-03-19,Middlesex London
+2020-03-20,Middlesex London
 2020-01-25,NotAvailable
 2020-01-26,NotAvailable
 2020-01-27,NotAvailable
@@ -164,6 +166,7 @@ Date,Public_Health_Unit
 2020-03-17,NotAvailable
 2020-03-18,NotAvailable
 2020-03-19,NotAvailable
+2020-03-20,NotAvailable
 2020-01-25,York
 2020-01-26,York
 2020-01-27,York
@@ -219,6 +222,7 @@ Date,Public_Health_Unit
 2020-03-17,York
 2020-03-18,York
 2020-03-19,York
+2020-03-20,York
 2020-01-25,Durham
 2020-01-26,Durham
 2020-01-27,Durham
@@ -274,6 +278,7 @@ Date,Public_Health_Unit
 2020-03-17,Durham
 2020-03-18,Durham
 2020-03-19,Durham
+2020-03-20,Durham
 2020-01-25,Newmarket
 2020-01-26,Newmarket
 2020-01-27,Newmarket
@@ -329,6 +334,7 @@ Date,Public_Health_Unit
 2020-03-17,Newmarket
 2020-03-18,Newmarket
 2020-03-19,Newmarket
+2020-03-20,Newmarket
 2020-01-25,Waterloo
 2020-01-26,Waterloo
 2020-01-27,Waterloo
@@ -384,6 +390,7 @@ Date,Public_Health_Unit
 2020-03-17,Waterloo
 2020-03-18,Waterloo
 2020-03-19,Waterloo
+2020-03-20,Waterloo
 2020-01-25,Peel
 2020-01-26,Peel
 2020-01-27,Peel
@@ -439,6 +446,7 @@ Date,Public_Health_Unit
 2020-03-17,Peel
 2020-03-18,Peel
 2020-03-19,Peel
+2020-03-20,Peel
 2020-01-25,RichmondHill
 2020-01-26,RichmondHill
 2020-01-27,RichmondHill
@@ -494,6 +502,7 @@ Date,Public_Health_Unit
 2020-03-17,RichmondHill
 2020-03-18,RichmondHill
 2020-03-19,RichmondHill
+2020-03-20,RichmondHill
 2020-01-25,Sudbury and District
 2020-01-26,Sudbury and District
 2020-01-27,Sudbury and District
@@ -549,6 +558,7 @@ Date,Public_Health_Unit
 2020-03-17,Sudbury and District
 2020-03-18,Sudbury and District
 2020-03-19,Sudbury and District
+2020-03-20,Sudbury and District
 2020-01-25,Ottawa
 2020-01-26,Ottawa
 2020-01-27,Ottawa
@@ -604,6 +614,7 @@ Date,Public_Health_Unit
 2020-03-17,Ottawa
 2020-03-18,Ottawa
 2020-03-19,Ottawa
+2020-03-20,Ottawa
 2020-01-25,Halton
 2020-01-26,Halton
 2020-01-27,Halton
@@ -659,6 +670,7 @@ Date,Public_Health_Unit
 2020-03-17,Halton
 2020-03-18,Halton
 2020-03-19,Halton
+2020-03-20,Halton
 2020-01-25,Hamilton
 2020-01-26,Hamilton
 2020-01-27,Hamilton
@@ -714,6 +726,7 @@ Date,Public_Health_Unit
 2020-03-17,Hamilton
 2020-03-18,Hamilton
 2020-03-19,Hamilton
+2020-03-20,Hamilton
 2020-01-25,Simcoe Muskoka
 2020-01-26,Simcoe Muskoka
 2020-01-27,Simcoe Muskoka
@@ -769,6 +782,7 @@ Date,Public_Health_Unit
 2020-03-17,Simcoe Muskoka
 2020-03-18,Simcoe Muskoka
 2020-03-19,Simcoe Muskoka
+2020-03-20,Simcoe Muskoka
 2020-01-25,Niagara
 2020-01-26,Niagara
 2020-01-27,Niagara
@@ -824,6 +838,7 @@ Date,Public_Health_Unit
 2020-03-17,Niagara
 2020-03-18,Niagara
 2020-03-19,Niagara
+2020-03-20,Niagara
 2020-01-25,"Haliburton,Kawartha,Pine Ridge"
 2020-01-26,"Haliburton,Kawartha,Pine Ridge"
 2020-01-27,"Haliburton,Kawartha,Pine Ridge"
@@ -879,6 +894,7 @@ Date,Public_Health_Unit
 2020-03-17,"Haliburton,Kawartha,Pine Ridge"
 2020-03-18,"Haliburton,Kawartha,Pine Ridge"
 2020-03-19,"Haliburton,Kawartha,Pine Ridge"
+2020-03-20,"Haliburton,Kawartha,Pine Ridge"
 2020-01-25,Huron Perth
 2020-01-26,Huron Perth
 2020-01-27,Huron Perth
@@ -934,6 +950,7 @@ Date,Public_Health_Unit
 2020-03-17,Huron Perth
 2020-03-18,Huron Perth
 2020-03-19,Huron Perth
+2020-03-20,Huron Perth
 2020-01-25,Northwestern
 2020-01-26,Northwestern
 2020-01-27,Northwestern
@@ -989,6 +1006,7 @@ Date,Public_Health_Unit
 2020-03-17,Northwestern
 2020-03-18,Northwestern
 2020-03-19,Northwestern
+2020-03-20,Northwestern
 2020-01-25,Eastern Ontario
 2020-01-26,Eastern Ontario
 2020-01-27,Eastern Ontario
@@ -1044,6 +1062,7 @@ Date,Public_Health_Unit
 2020-03-17,Eastern Ontario
 2020-03-18,Eastern Ontario
 2020-03-19,Eastern Ontario
+2020-03-20,Eastern Ontario
 2020-01-25,pending
 2020-01-26,pending
 2020-01-27,pending
@@ -1099,6 +1118,7 @@ Date,Public_Health_Unit
 2020-03-17,pending
 2020-03-18,pending
 2020-03-19,pending
+2020-03-20,pending
 2020-01-25,Grey Bruce
 2020-01-26,Grey Bruce
 2020-01-27,Grey Bruce
@@ -1154,6 +1174,7 @@ Date,Public_Health_Unit
 2020-03-17,Grey Bruce
 2020-03-18,Grey Bruce
 2020-03-19,Grey Bruce
+2020-03-20,Grey Bruce
 2020-01-25,Peterborough
 2020-01-26,Peterborough
 2020-01-27,Peterborough
@@ -1209,6 +1230,7 @@ Date,Public_Health_Unit
 2020-03-17,Peterborough
 2020-03-18,Peterborough
 2020-03-19,Peterborough
+2020-03-20,Peterborough
 2020-01-25,Wellington Dufferin Guelph
 2020-01-26,Wellington Dufferin Guelph
 2020-01-27,Wellington Dufferin Guelph
@@ -1264,6 +1286,7 @@ Date,Public_Health_Unit
 2020-03-17,Wellington Dufferin Guelph
 2020-03-18,Wellington Dufferin Guelph
 2020-03-19,Wellington Dufferin Guelph
+2020-03-20,Wellington Dufferin Guelph
 2020-01-25,"Kingston, Frontenac and Lennox & Addington"
 2020-01-26,"Kingston, Frontenac and Lennox & Addington"
 2020-01-27,"Kingston, Frontenac and Lennox & Addington"
@@ -1319,6 +1342,7 @@ Date,Public_Health_Unit
 2020-03-17,"Kingston, Frontenac and Lennox & Addington"
 2020-03-18,"Kingston, Frontenac and Lennox & Addington"
 2020-03-19,"Kingston, Frontenac and Lennox & Addington"
+2020-03-20,"Kingston, Frontenac and Lennox & Addington"
 2020-01-25,Chatham Kent
 2020-01-26,Chatham Kent
 2020-01-27,Chatham Kent
@@ -1374,6 +1398,7 @@ Date,Public_Health_Unit
 2020-03-17,Chatham Kent
 2020-03-18,Chatham Kent
 2020-03-19,Chatham Kent
+2020-03-20,Chatham Kent
 2020-01-25,Brant
 2020-01-26,Brant
 2020-01-27,Brant
@@ -1429,6 +1454,7 @@ Date,Public_Health_Unit
 2020-03-17,Brant
 2020-03-18,Brant
 2020-03-19,Brant
+2020-03-20,Brant
 2020-01-25,Algoma
 2020-01-26,Algoma
 2020-01-27,Algoma
@@ -1484,6 +1510,7 @@ Date,Public_Health_Unit
 2020-03-17,Algoma
 2020-03-18,Algoma
 2020-03-19,Algoma
+2020-03-20,Algoma
 2020-01-25,Haliburton Kawartha
 2020-01-26,Haliburton Kawartha
 2020-01-27,Haliburton Kawartha
@@ -1539,3 +1566,60 @@ Date,Public_Health_Unit
 2020-03-17,Haliburton Kawartha
 2020-03-18,Haliburton Kawartha
 2020-03-19,Haliburton Kawartha
+2020-03-20,Haliburton Kawartha
+2020-01-25,Hastings Prince Edward
+2020-01-26,Hastings Prince Edward
+2020-01-27,Hastings Prince Edward
+2020-01-28,Hastings Prince Edward
+2020-01-29,Hastings Prince Edward
+2020-01-30,Hastings Prince Edward
+2020-01-31,Hastings Prince Edward
+2020-02-01,Hastings Prince Edward
+2020-02-02,Hastings Prince Edward
+2020-02-03,Hastings Prince Edward
+2020-02-04,Hastings Prince Edward
+2020-02-05,Hastings Prince Edward
+2020-02-06,Hastings Prince Edward
+2020-02-07,Hastings Prince Edward
+2020-02-08,Hastings Prince Edward
+2020-02-09,Hastings Prince Edward
+2020-02-10,Hastings Prince Edward
+2020-02-11,Hastings Prince Edward
+2020-02-12,Hastings Prince Edward
+2020-02-13,Hastings Prince Edward
+2020-02-14,Hastings Prince Edward
+2020-02-15,Hastings Prince Edward
+2020-02-16,Hastings Prince Edward
+2020-02-17,Hastings Prince Edward
+2020-02-18,Hastings Prince Edward
+2020-02-19,Hastings Prince Edward
+2020-02-20,Hastings Prince Edward
+2020-02-21,Hastings Prince Edward
+2020-02-22,Hastings Prince Edward
+2020-02-23,Hastings Prince Edward
+2020-02-24,Hastings Prince Edward
+2020-02-25,Hastings Prince Edward
+2020-02-26,Hastings Prince Edward
+2020-02-27,Hastings Prince Edward
+2020-02-28,Hastings Prince Edward
+2020-02-29,Hastings Prince Edward
+2020-03-01,Hastings Prince Edward
+2020-03-02,Hastings Prince Edward
+2020-03-03,Hastings Prince Edward
+2020-03-04,Hastings Prince Edward
+2020-03-05,Hastings Prince Edward
+2020-03-06,Hastings Prince Edward
+2020-03-07,Hastings Prince Edward
+2020-03-08,Hastings Prince Edward
+2020-03-09,Hastings Prince Edward
+2020-03-10,Hastings Prince Edward
+2020-03-11,Hastings Prince Edward
+2020-03-12,Hastings Prince Edward
+2020-03-13,Hastings Prince Edward
+2020-03-14,Hastings Prince Edward
+2020-03-15,Hastings Prince Edward
+2020-03-16,Hastings Prince Edward
+2020-03-17,Hastings Prince Edward
+2020-03-18,Hastings Prince Edward
+2020-03-19,Hastings Prince Edward
+2020-03-20,Hastings Prince Edward
