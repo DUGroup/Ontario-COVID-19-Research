@@ -257,3 +257,54 @@ Case_number,age_gender,Public_Health_Unit,Hospital,Transmission,Status,Date
 256,pending,pending,,pending,pending,2020-03-19
 257,pending,pending,,pending ,pending,2020-03-19
 258,50s Male,Halton,,pending,deceased,2020-03-19
+259,40s Male,Hamilton,,travel (USA),self-isolating,2020-03-20
+260,30s Male,Peterborough,,close contact,self-isolating,2020-03-20
+261,60s Female,Peterborough,,travel (cruise),self-isolating,2020-03-20
+262,60s Male,Peterborough,,travel (cruise),self-isolating,2020-03-20
+263,70s Female,Durham,,travel (Caribbean cruise),self-isolating,2020-03-20
+264,80s Male,Hastings Prince Edward,,travel (Bahamas),self-isolating,2020-03-20
+265,60s Male,Durham,,pending,LTCH,2020-03-20
+266,90s Female,Durham,,pending,LTCH,2020-03-20
+267,80s Female,Durham,,pending,LTCH,2020-03-20
+268,70s Male,Durham,,pending,LTCH,2020-03-20
+269,80s Male,Ottawa,,travel (Portugal),self-isolating,2020-03-20
+270,40s Male,Ottawa,,close contact,self-isolating,2020-03-20
+271,40s Male,Ottawa,,close contact,self-isolating,2020-03-20
+272,70s Female,Hamilton,,travel (Caribbean cruise),self-isolating,2020-03-20
+273,70s Male,Waterloo,,pending,hospitalized,2020-03-20
+274,20s Female,Peel,,close contact,self-isolating,2020-03-20
+275,40s Female,Toronto,,close contact,self-isolating,2020-03-20
+276,40s Male,Peel,,pending,self-isolating,2020-03-20
+277,20s Female,Waterloo,,close contact,self-isolating,2020-03-20
+278,50s Female,Waterloo,,travel (Caribbean cruise),self-isolating,2020-03-20
+279,20s Male,Waterloo,,close contact,self-isolating,2020-03-20
+280,50s Female,Toronto,,close contact,self-isolating,2020-03-20
+281,50s Female,Durham,,close contact,hospitalized,2020-03-20
+282,30s Male,York,,travel (Caribbean),self-isolating,2020-03-20
+283,pending,pending,,pending,pending,2020-03-20
+284,pending,pending,,pending ,pending,2020-03-20
+285,pending,pending,,pending ,pending,2020-03-20
+286,pending,pending,,pending,pending,2020-03-20
+287,pending,pending,,pending ,pending,2020-03-20
+288,pending,pending,,pending ,pending,2020-03-20
+289,pending,pending,,pending,pending,2020-03-20
+290,pending,pending,,pending ,pending,2020-03-20
+291,pending,pending,,pending ,pending,2020-03-20
+292,pending,pending,,pending,pending,2020-03-20
+293,pending,pending,,pending ,pending,2020-03-20
+294,pending,pending,,pending,pending,2020-03-20
+295,pending,pending,,pending ,pending,2020-03-20
+296,pending,pending,,pending ,pending,2020-03-20
+297,pending,pending,,pending,pending,2020-03-20
+298,pending,pending,,pending ,pending,2020-03-20
+299,pending,pending,,pending ,pending,2020-03-20
+300,pending,pending,,pending,pending,2020-03-20
+301,pending,pending,,pending ,pending,2020-03-20
+302,pending,pending,,pending ,pending,2020-03-20
+303,pending,pending,,pending ,pending,2020-03-20
+304,pending,pending,,pending,pending,2020-03-20
+305,pending,pending,,pending ,pending,2020-03-20
+306,pending,pending,,pending ,pending,2020-03-20
+307,pending,pending,,pending,pending,2020-03-20
+308,pending,pending,,pending ,pending,2020-03-20
+309,,,,,,
