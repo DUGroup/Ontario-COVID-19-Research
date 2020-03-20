@@ -20,6 +20,7 @@ library(stringr)
 library(ggplot2)
 library(kableExtra)
 library(patchwork)
+library(rgdal)
 
 library(rgeos)
 library(maptools)
@@ -108,8 +109,7 @@ count.by.region.plot /count.by.gender.plot /count.by.age.plot
 
 ```{r plotly map plot by region, fig.width = 8, fig.height = 8, echo = FALSE}
 #read in shape file (census divisions) from stats canada (https://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/bound-limit-2006-eng.cfm)
-library(sf)
-  sp.Canada <- sf::st_read('C:/Users/mn209073/Documents/March Break/Coronavirus Analysis/gcd_000a06a_e/gcd_000a07a_e.shp')
+  sp.Canada <- rgdal::readOGR('../Data/gcd_000a06a_e/gcd_000a07a_e.shp')
   #slotNames(sp.Canada)
   #names(sp.Canada@data)
   #head(sp.Canada@data, 5)
