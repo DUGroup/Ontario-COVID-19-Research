@@ -317,3 +317,62 @@ Case_number,age_gender,Public_Health_Unit,Hospital,Transmission,Status,Date
 316,90s Female,Haliburton Kawartha,,pending,isolation in nursing home,2020-03-20
 317,60s Male,Haliburton Kawartha,,pending,isolation in nursing home,2020-03-20
 318,50s Male,Porcupine,,travel,self-isolating,2020-03-20
+319,20s Male,Hastings Prince Edward,,travel (USA),self-isolating,2020-03-21
+320,50s Male,Durham,,close contact,self-isolating,2020-03-21
+321,50s Female,Toronto,,travel (Germany),self-isolating,2020-03-21
+322,50s Male,Simcoe Muskoka,,travel (USA),self-isolating,2020-03-21
+323,20s Male,Simcoe Muskoka,,travel (Ecuador),self-isolating,2020-03-21
+324,< 18 Female,York,,close contact,self-isolating,2020-03-21
+325,50s Female,York,,"travel (Germany, Austria)",self-isolating,2020-03-21
+326,40s Female,Peel,,travel (London),self-isolating,2020-03-21
+327,50s Male,Peel,,travel (Philippines),self-isolating,2020-03-21
+328,50s Female,Peel,,close contact,self-isolating,2020-03-21
+329,50s Female,Peel,,pending,pending,2020-03-21
+330,40s Male,Simcoe Muskoka,,travel (England),hospitalized,2020-03-21
+331,40s Female,York,,pending,self-isolating,2020-03-21
+332,60s Male,Toronto,,travel (Europe),self-isolating,2020-03-21
+333,40s Female,York,,pending,pending,2020-03-21
+334,70s Female,York,,close contact,pending,2020-03-21
+335,30s Male,Ottawa,,close contact,self-isolating,2020-03-21
+336,pending,pending,,pending,pending,2020-03-21
+337,pending,pending,,pending,pending,2020-03-21
+338,pending,pending,,pending,pending,2020-03-21
+339,pending,pending,,pending,pending,2020-03-21
+340,pending,pending,,pending,pending,2020-03-21
+341,pending,pending,,pending,pending,2020-03-21
+342,pending,pending,,pending,pending,2020-03-21
+343,pending,pending,,pending,pending,2020-03-21
+344,pending,pending,,pending,pending,2020-03-21
+345,pending,pending,,pending,pending,2020-03-21
+346,pending,pending,,pending,pending,2020-03-21
+347,pending,pending,,pending,pending,2020-03-21
+348,pending,pending,,pending,pending,2020-03-21
+349,pending,pending,,pending,pending,2020-03-21
+350,pending,pending,,pending,pending,2020-03-21
+351,pending,pending,,pending,pending,2020-03-21
+352,pending,pending,,pending,pending,2020-03-21
+353,pending,pending,,pending,pending,2020-03-21
+354,pending,pending,,pending,pending,2020-03-21
+355,pending,pending,,pending,pending,2020-03-21
+356,pending,pending,,pending,pending,2020-03-21
+357,pending,pending,,pending,pending,2020-03-21
+358,pending,pending,,pending,pending,2020-03-21
+359,pending,pending,,pending,pending,2020-03-21
+360,pending,pending,,pending,pending,2020-03-21
+361,pending,pending,,pending,pending,2020-03-21
+362,pending,pending,,pending,pending,2020-03-21
+363,pending,pending,,pending,pending,2020-03-21
+364,pending,pending,,pending,pending,2020-03-21
+365,pending,pending,,pending,pending,2020-03-21
+366,pending,pending,,pending,pending,2020-03-21
+367,pending,pending,,pendingÊ,pending,2020-03-21
+368,pending,pending,,pendingÊ,pending,2020-03-21
+369,pending,pending,,pendingÊ,pending,2020-03-21
+370,pending,pending,,pending,pending,2020-03-21
+371,pending,pending,,pendingÊ,pending,2020-03-21
+372,pending,pending,,pendingÊ,pending,2020-03-21
+373,pending,pending,,pendingÊ,pending,2020-03-21
+374,pending,pending,,pending,pending,2020-03-21
+375,pending,pending,,pendingÊ,pending,2020-03-21
+376,pending,pending,,pendingÊ,pending,2020-03-21
+377,pending,pending,,pending,pending,2020-03-21
