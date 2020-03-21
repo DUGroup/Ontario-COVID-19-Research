@@ -235,27 +235,27 @@ Case_number,age_gender,Public_Health_Unit,Hospital,Transmission,Status,Date
 234,50s Female,Peel,,travel (cruise),pending,2020-03-19
 235,70s Male,"Haliburton,Kawartha,Pine Ridge ",,travel (Europe),pending,2020-03-19
 236,pending,pending,,pending,pending,2020-03-19
-237,pending,pending,,pendingÊ,pending,2020-03-19
-238,pending,pending,,pendingÊ,pending,2020-03-19
+237,pending,pending,,pending,pending,2020-03-19
+238,pending,pending,,pending,pending,2020-03-19
 239,pending,pending,,pending,pending,2020-03-19
-240,pending,pending,,pendingÊ,pending,2020-03-19
-241,pending,pending,,pendingÊ,pending,2020-03-19
+240,pending,pending,,pending,pending,2020-03-19
+241,pending,pending,,pending,pending,2020-03-19
 242,pending,pending,,pending,pending,2020-03-19
-243,pending,pending,,pendingÊ,pending,2020-03-19
-244,pending,pending,,pendingÊ,pending,2020-03-19
+243,pending,pending,,pending,pending,2020-03-19
+244,pending,pending,,pending,pending,2020-03-19
 245,pending,pending,,pending,pending,2020-03-19
-246,pending,pending,,pendingÊ,pending,2020-03-19
-247,pending,pending,,pendingÊ,pending,2020-03-19
+246,pending,pending,,pending,pending,2020-03-19
+247,pending,pending,,pending,pending,2020-03-19
 248,pending,pending,,pending,pending,2020-03-19
-249,pending,pending,,pendingÊ,pending,2020-03-19
+249,pending,pending,,pending,pending,2020-03-19
 250,pending,pending,,pending,pending,2020-03-19
-251,pending,pending,,pendingÊ,pending,2020-03-19
-252,pending,pending,,pendingÊ,pending,2020-03-19
+251,pending,pending,,pending,pending,2020-03-19
 252,pending,pending,,pending,pending,2020-03-19
-254,pending,pending,,pendingÊ,pending,2020-03-19
-255,pending,pending,,pendingÊ,pending,2020-03-19
+252,pending,pending,,pending,pending,2020-03-19
+254,pending,pending,,pending,pending,2020-03-19
+255,pending,pending,,pending,pending,2020-03-19
 256,pending,pending,,pending,pending,2020-03-19
-257,pending,pending,,pendingÊ,pending,2020-03-19
+257,pending,pending,,pending,pending,2020-03-19
 258,50s Male,Halton,,pending,deceased,2020-03-19
 259,40s Male,Hamilton,,travel (USA),self-isolating,2020-03-20
 260,30s Male,Peterborough,,close contact,self-isolating,2020-03-20
@@ -282,36 +282,36 @@ Case_number,age_gender,Public_Health_Unit,Hospital,Transmission,Status,Date
 281,50s Female,Durham,,close contact,hospitalized,2020-03-20
 282,30s Male,York,,travel (Caribbean),self-isolating,2020-03-20
 283,pending,pending,,pending,pending,2020-03-20
-284,pending,pending,,pendingÊ,pending,2020-03-20
-285,pending,pending,,pendingÊ,pending,2020-03-20
+284,pending,pending,,pending,pending,2020-03-20
+285,pending,pending,,pending,pending,2020-03-20
 286,pending,pending,,pending,pending,2020-03-20
-287,pending,pending,,pendingÊ,pending,2020-03-20
-288,pending,pending,,pendingÊ,pending,2020-03-20
+287,pending,pending,,pending,pending,2020-03-20
+288,pending,pending,,pending,pending,2020-03-20
 289,pending,pending,,pending,pending,2020-03-20
-290,pending,pending,,pendingÊ,pending,2020-03-20
-291,pending,pending,,pendingÊ,pending,2020-03-20
+290,pending,pending,,pending,pending,2020-03-20
+291,pending,pending,,pending,pending,2020-03-20
 292,pending,pending,,pending,pending,2020-03-20
-293,pending,pending,,pendingÊ,pending,2020-03-20
+293,pending,pending,,pending,pending,2020-03-20
 294,pending,pending,,pending,pending,2020-03-20
-295,pending,pending,,pendingÊ,pending,2020-03-20
-296,pending,pending,,pendingÊ,pending,2020-03-20
+295,pending,pending,,pending,pending,2020-03-20
+296,pending,pending,,pending,pending,2020-03-20
 297,pending,pending,,pending,pending,2020-03-20
-298,pending,pending,,pendingÊ,pending,2020-03-20
-299,pending,pending,,pendingÊ,pending,2020-03-20
+298,pending,pending,,pending,pending,2020-03-20
+299,pending,pending,,pending,pending,2020-03-20
 300,pending,pending,,pending,pending,2020-03-20
-301,pending,pending,,pendingÊ,pending,2020-03-20
-302,pending,pending,,pendingÊ,pending,2020-03-20
-303,pending,pending,,pendingÊ,pending,2020-03-20
+301,pending,pending,,pending,pending,2020-03-20
+302,pending,pending,,pending,pending,2020-03-20
+303,pending,pending,,pending,pending,2020-03-20
 304,pending,pending,,pending,pending,2020-03-20
-305,pending,pending,,pendingÊ,pending,2020-03-20
-306,pending,pending,,pendingÊ,pending,2020-03-20
+305,pending,pending,,pending,pending,2020-03-20
+306,pending,pending,,pending,pending,2020-03-20
 307,pending,pending,,pending,pending,2020-03-20
-308,pending,pending,,pendingÊ,pending,2020-03-20
+308,pending,pending,,pending,pending,2020-03-20
 309,pending,Middlesex London,,pending,self-isolating,2020-03-20
 310,pending,Middlesex London,,pending,self-isolating,2020-03-20
 311,pending,Middlesex London,,pending,self-isolating,2020-03-20
 312,pending,Middlesex London,,pending,self-isolating,2020-03-20
-313,pending,Middlesex London,,pendingÊ,self-isolating,2020-03-20
+313,pending,Middlesex London,,pending,self-isolating,2020-03-20
 314,pending,Middlesex London,,pending,self-isolating,2020-03-20
 315,80s Male,Haliburton Kawartha,,pending,isolation in nursing home,2020-03-20
 316,90s Female,Haliburton Kawartha,,pending,isolation in nursing home,2020-03-20
@@ -365,14 +365,14 @@ Case_number,age_gender,Public_Health_Unit,Hospital,Transmission,Status,Date
 364,pending,pending,,pending,pending,2020-03-21
 365,pending,pending,,pending,pending,2020-03-21
 366,pending,pending,,pending,pending,2020-03-21
-367,pending,pending,,pendingÊ,pending,2020-03-21
-368,pending,pending,,pendingÊ,pending,2020-03-21
-369,pending,pending,,pendingÊ,pending,2020-03-21
+367,pending,pending,,pending,pending,2020-03-21
+368,pending,pending,,pending,pending,2020-03-21
+369,pending,pending,,pending,pending,2020-03-21
 370,pending,pending,,pending,pending,2020-03-21
-371,pending,pending,,pendingÊ,pending,2020-03-21
-372,pending,pending,,pendingÊ,pending,2020-03-21
-373,pending,pending,,pendingÊ,pending,2020-03-21
+371,pending,pending,,pending,pending,2020-03-21
+372,pending,pending,,pending,pending,2020-03-21
+373,pending,pending,,pending,pending,2020-03-21
 374,pending,pending,,pending,pending,2020-03-21
-375,pending,pending,,pendingÊ,pending,2020-03-21
-376,pending,pending,,pendingÊ,pending,2020-03-21
+375,pending,pending,,pending,pending,2020-03-21
+376,pending,pending,,pending,pending,2020-03-21
 377,pending,pending,,pending,pending,2020-03-21
