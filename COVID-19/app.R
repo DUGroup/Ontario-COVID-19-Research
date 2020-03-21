@@ -1,14 +1,16 @@
+# MAIN DASHBOARD
+
 library(shiny)
 library(shinydashboard)
 library(plotly)
 library(tidyverse)
 library(googlesheets4)
 library(janitor)
-library(maptools)
-library(sf)
+# library(maptools)
+# library(sf)
 # Load Main Data Set
 
-setwd("/Users/gregrousell/Dropbox/COVID-19/Ontario-COVID-19-Research/COVID-19")
+# setwd("/Users/gregrousell/Dropbox/COVID-19/Ontario-COVID-19-Research/COVID-19")
 
 df <- read_csv ("https://raw.githubusercontent.com/DUGroup/Ontario-COVID-19-Research/master/Data/ontario_corona_cases.csv")
 
@@ -130,16 +132,16 @@ ui <- fluidPage(
                              fluidRow(p("Data current as of", Sys.Date())),
                              fluidRow(
                                  column(3, align = "center",
-                                        infoBox(title = h4("Confirmed Cases"),
+                                        infoBox(title = h4("Confirmed Positive"),
                                                 value = h4(length(df$Case_number)))),
                                  column(3, align = "center",
-                                        infoBox(title = h4("Resolved Cases"), 
+                                        infoBox(title = h4("Resolved"), 
                                                 value = h4(prov_agg[4,2]))),
                                  column(3, align = "center",
                                         infoBox(title = h4("Number Tests"), 
                                                 value = h4(prov_agg[6,2]))),
                                  column(3, align = "center",
-                                        infoBox(title = h4("Number Deaths"), 
+                                        infoBox(title = h4("Deceased"), 
                                                 value = h4(prov_agg[5,2])))
                              ),
                              fluidRow(
@@ -150,15 +152,15 @@ ui <- fluidPage(
                              h3("Public Health Units"),
                              p("Plot 2 shows the growth in total cases for each of the Public Health Units (PHU). Select the region of interest"),
                              br(),
-                             selectInput("select",
-                                         h3("Select box"),
-                                         choices = phu_levels,
-                                         selected = 2),
+                             # selectInput("select",
+                             #             h3("Select box"),
+                             #             choices = phu_levels,
+                             #             selected = 2),
                              plotlyOutput('plot2', width = "100%", height = "80%")
                     ),
                     tabPanel("Ontario Map", 
                              h3("Ontario Map"),
-                             h4("Coming soon!"),
+                             h4("Coming soon!")
                              #p("Plot 1 shows the number of confirmed COVID-19 cases in Ontario by census division."),
                              #br(),
                              #plotlyOutput('plot3', width = "100%")
@@ -185,7 +187,7 @@ server <- function(input, output) {
     )
     
     output$plot2 <- renderPlotly(
-        plot2 <- plot_ly(cases_by_region %>% dplyr::filter (Public_Health_Unit == input$select), 
+        plot2 <- plot_ly(cases_by_region, # %>% dplyr::filter (Public_Health_Unit == input$select), 
                          x = ~Date, 
                          y = ~Cases,
                          width = 1200, height = 400) %>% 
