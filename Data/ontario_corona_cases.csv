@@ -423,3 +423,82 @@ Case_number,age_gender,Public_Health_Unit,Hospital,Transmission,Status,Date
 422,pending,pending,,pending,pending,2020-03-22
 423,pending,pending,,pending,pending,2020-03-22
 424,pending,pending,,pending,pending,2020-03-22
+425,70s Female,York,,travel,deceased,2020-03-22
+426,80s Male,Haliburton Kawartha Pineridge,,pending,deceased,2020-03-23
+427,30s Male,York,,close contact,self-isolating,2020-03-23
+428,50s Male,York,,close contact,self-isolating,2020-03-23
+429,20s Female,Hastings Prince Edward,,close contact,self-isolating,2020-03-23
+430,40s Male,Peel,,close contact,self-isolating,2020-03-23
+431,50s Male,Toronto,,pending,self-isolating,2020-03-23
+432,30s Female,York,,pending,self-isolating,2020-03-23
+433,40s pending,Toronto,,travel (USA),self-isolating,2020-03-23
+434,40s Female,Sudbury,,travel (Switzerland),self-isolating,2020-03-23
+435,< 18 Female,Ottawa,,travel,self-isolating,2020-03-23
+436,50s Male,Halton,,"travel (Puerto Rico, St Thomas, Barbados)",self-isolating,2020-03-23
+437,60s Female,Simcoe Muskoka,,"travel (Egypt, Israel, London)",self-isolating,2020-03-23
+438,pending Male,Peel,,close contact,self-isolating,2020-03-23
+439,50s Male,Toronto,,pending,self-isolating,2020-03-23
+440,60s Male,Toronto,,pending,institution,2020-03-23
+441,20s Female,Toronto,,travel (USA),self-isolating,2020-03-23
+442,40s Male,Halton,,travel (Jamaica),self-isolating,2020-03-23
+443,90s Male,Toronto,,pending,institution,2020-03-23
+444,60s Male,Wellington Dufferin Guelph,,pending,self-isolating,2020-03-23
+445,20s Female,Hamilton,,pending,pending,2020-03-23
+446,70s Female,Durham,,pending,hospitalized,2020-03-23
+447,20s Male,Toronto,,travel (USA),self-isolating,2020-03-23
+448,80s Female,Peel,,pending,self-isolating,2020-03-23
+449,40s Male,Peel,,close contact,self-isolating,2020-03-23
+450,50s Female,York,,travel (USA),hospitalized,2020-03-23
+451,80s Male,Haliburton Kawartha Pineridge,,pending,self-isolating,2020-03-23
+452,40s Male,Waterloo,,pending,institution,2020-03-23
+453,50s Female,Ottawa,,close contact,self-isolating,2020-03-23
+454,20s Female,Toronto,,"travel (London, Dubai)",self-isolating,2020-03-23
+455,90s Female,Toronto,,pending,institution,2020-03-23
+456,40s pending,Toronto,,pending,self-isolating,2020-03-23
+457,60s Female,Eastern Ontario,,close contact,self-isolating,2020-03-23
+458,70s Male,Peel,,travel (Italy),self-isolating,2020-03-23
+459,60s Male,York,,close contact,self-isolating,2020-03-23
+460,70s Female,"Kingston, Frontenac, Lennox and Addington",,pending,hospitalized,2020-03-23
+461,30s Male,York,,travel (USA),self-isolating,2020-03-23
+462,50s Male,Ottawa,,pending,hospitalized,2020-03-23
+463,90s pending,Toronto,,pending,institution,2020-03-23
+464,40s Male,Durham,,pending,hospitalized,2020-03-23
+465,30s Female,Toronto,,pending,hospitalized,2020-03-23
+466,40s MaleÊ,Peel,,close contact,self-isolating,2020-03-23
+467,40s Female,Toronto,,close contactÊ,self-isolating,2020-03-23
+468,20s Female,Toronto,,travel (Spain),self-isolating,2020-03-23
+469,40s Male,York,,travel (Costa Rica),self-isolating,2020-03-23
+470,60s Female,York,,close contact,self-isolating,2020-03-23
+471,70s Male,Hamilton,,close contact,self-isolating,2020-03-23
+472,70s Female,Hamilton,,close contact,self-isolating,2020-03-23
+473,70s Male,Durham,,close contact,self-isolating,2020-03-23
+474,40s Male,Toronto,,close contact,self-isolating,2020-03-23
+475,pending,pending,,pending,pending,2020-03-23
+476,pending,pending,,pending,pending,2020-03-23
+477,pending,pending,,pending,pending,2020-03-23
+478,pending,pending,,pending,pending,2020-03-23
+479,pending,pending,,pending,pending,2020-03-23
+480,pending,pending,,pending,pending,2020-03-23
+481,pending,pending,,pending,pending,2020-03-23
+482,pending,pending,,pending,pending,2020-03-23
+483,pending,pending,,pending,pending,2020-03-23
+484,pending,pending,,pending,pending,2020-03-23
+485,pending,pending,,pending,pending,2020-03-23
+486,pending,pending,,pending,pending,2020-03-23
+487,pending,pending,,pending,pending,2020-03-23
+488,pending,pending,,pending,pending,2020-03-23
+489,pending,pending,,pending,pending,2020-03-23
+490,pending,pending,,pending,pending,2020-03-23
+491,pending,pending,,pending,pending,2020-03-23
+492,pending,pending,,pending,pending,2020-03-23
+493,pending,pending,,pending,pending,2020-03-23
+494,pending,pending,,pending,pending,2020-03-23
+495,pending,pending,,pending,pending,2020-03-23
+496,pending,pending,,pending,pending,2020-03-23
+497,pending,pending,,pending,pending,2020-03-23
+498,pending,pending,,pending,pending,2020-03-23
+499,pending,pending,,pending,pending,2020-03-23
+500,pending,pending,,pending,pending,2020-03-23
+501,pending,pending,,pending,pending,2020-03-23
+502,pending,pending,,pending,pending,2020-03-23
+503,pending,pending,,pending,pending,2020-03-23

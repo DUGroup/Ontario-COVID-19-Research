@@ -57,6 +57,7 @@ Date,Public_Health_Unit
 2020-03-20,Toronto
 2020-03-21,Toronto
 2020-03-22,Toronto
+2020-03-23,Toronto
 2020-01-25,Middlesex London
 2020-01-26,Middlesex London
 2020-01-27,Middlesex London
@@ -115,6 +116,7 @@ Date,Public_Health_Unit
 2020-03-20,Middlesex London
 2020-03-21,Middlesex London
 2020-03-22,Middlesex London
+2020-03-23,Middlesex London
 2020-01-25,Pending or Not Available
 2020-01-26,Pending or Not Available
 2020-01-27,Pending or Not Available
@@ -173,6 +175,7 @@ Date,Public_Health_Unit
 2020-03-20,Pending or Not Available
 2020-03-21,Pending or Not Available
 2020-03-22,Pending or Not Available
+2020-03-23,Pending or Not Available
 2020-01-25,York
 2020-01-26,York
 2020-01-27,York
@@ -231,6 +234,7 @@ Date,Public_Health_Unit
 2020-03-20,York
 2020-03-21,York
 2020-03-22,York
+2020-03-23,York
 2020-01-25,Durham
 2020-01-26,Durham
 2020-01-27,Durham
@@ -289,6 +293,7 @@ Date,Public_Health_Unit
 2020-03-20,Durham
 2020-03-21,Durham
 2020-03-22,Durham
+2020-03-23,Durham
 2020-01-25,Waterloo
 2020-01-26,Waterloo
 2020-01-27,Waterloo
@@ -347,6 +352,7 @@ Date,Public_Health_Unit
 2020-03-20,Waterloo
 2020-03-21,Waterloo
 2020-03-22,Waterloo
+2020-03-23,Waterloo
 2020-01-25,Peel
 2020-01-26,Peel
 2020-01-27,Peel
@@ -405,6 +411,7 @@ Date,Public_Health_Unit
 2020-03-20,Peel
 2020-03-21,Peel
 2020-03-22,Peel
+2020-03-23,Peel
 2020-01-25,Sudbury and District
 2020-01-26,Sudbury and District
 2020-01-27,Sudbury and District
@@ -463,6 +470,7 @@ Date,Public_Health_Unit
 2020-03-20,Sudbury and District
 2020-03-21,Sudbury and District
 2020-03-22,Sudbury and District
+2020-03-23,Sudbury and District
 2020-01-25,Ottawa
 2020-01-26,Ottawa
 2020-01-27,Ottawa
@@ -521,6 +529,7 @@ Date,Public_Health_Unit
 2020-03-20,Ottawa
 2020-03-21,Ottawa
 2020-03-22,Ottawa
+2020-03-23,Ottawa
 2020-01-25,Halton
 2020-01-26,Halton
 2020-01-27,Halton
@@ -579,6 +588,7 @@ Date,Public_Health_Unit
 2020-03-20,Halton
 2020-03-21,Halton
 2020-03-22,Halton
+2020-03-23,Halton
 2020-01-25,Hamilton
 2020-01-26,Hamilton
 2020-01-27,Hamilton
@@ -637,6 +647,7 @@ Date,Public_Health_Unit
 2020-03-20,Hamilton
 2020-03-21,Hamilton
 2020-03-22,Hamilton
+2020-03-23,Hamilton
 2020-01-25,Simcoe Muskoka
 2020-01-26,Simcoe Muskoka
 2020-01-27,Simcoe Muskoka
@@ -695,6 +706,7 @@ Date,Public_Health_Unit
 2020-03-20,Simcoe Muskoka
 2020-03-21,Simcoe Muskoka
 2020-03-22,Simcoe Muskoka
+2020-03-23,Simcoe Muskoka
 2020-01-25,Niagara
 2020-01-26,Niagara
 2020-01-27,Niagara
@@ -753,6 +765,7 @@ Date,Public_Health_Unit
 2020-03-20,Niagara
 2020-03-21,Niagara
 2020-03-22,Niagara
+2020-03-23,Niagara
 2020-01-25,"Haliburton,Kawartha,Pine Ridge"
 2020-01-26,"Haliburton,Kawartha,Pine Ridge"
 2020-01-27,"Haliburton,Kawartha,Pine Ridge"
@@ -811,6 +824,7 @@ Date,Public_Health_Unit
 2020-03-20,"Haliburton,Kawartha,Pine Ridge"
 2020-03-21,"Haliburton,Kawartha,Pine Ridge"
 2020-03-22,"Haliburton,Kawartha,Pine Ridge"
+2020-03-23,"Haliburton,Kawartha,Pine Ridge"
 2020-01-25,Huron Perth
 2020-01-26,Huron Perth
 2020-01-27,Huron Perth
@@ -869,6 +883,7 @@ Date,Public_Health_Unit
 2020-03-20,Huron Perth
 2020-03-21,Huron Perth
 2020-03-22,Huron Perth
+2020-03-23,Huron Perth
 2020-01-25,Northwestern
 2020-01-26,Northwestern
 2020-01-27,Northwestern
@@ -927,6 +942,7 @@ Date,Public_Health_Unit
 2020-03-20,Northwestern
 2020-03-21,Northwestern
 2020-03-22,Northwestern
+2020-03-23,Northwestern
 2020-01-25,Eastern Ontario
 2020-01-26,Eastern Ontario
 2020-01-27,Eastern Ontario
@@ -985,6 +1001,7 @@ Date,Public_Health_Unit
 2020-03-20,Eastern Ontario
 2020-03-21,Eastern Ontario
 2020-03-22,Eastern Ontario
+2020-03-23,Eastern Ontario
 2020-01-25,Grey Bruce
 2020-01-26,Grey Bruce
 2020-01-27,Grey Bruce
@@ -1043,6 +1060,7 @@ Date,Public_Health_Unit
 2020-03-20,Grey Bruce
 2020-03-21,Grey Bruce
 2020-03-22,Grey Bruce
+2020-03-23,Grey Bruce
 2020-01-25,Peterborough
 2020-01-26,Peterborough
 2020-01-27,Peterborough
@@ -1101,6 +1119,7 @@ Date,Public_Health_Unit
 2020-03-20,Peterborough
 2020-03-21,Peterborough
 2020-03-22,Peterborough
+2020-03-23,Peterborough
 2020-01-25,Wellington Dufferin Guelph
 2020-01-26,Wellington Dufferin Guelph
 2020-01-27,Wellington Dufferin Guelph
@@ -1159,6 +1178,7 @@ Date,Public_Health_Unit
 2020-03-20,Wellington Dufferin Guelph
 2020-03-21,Wellington Dufferin Guelph
 2020-03-22,Wellington Dufferin Guelph
+2020-03-23,Wellington Dufferin Guelph
 2020-01-25,"Kingston, Frontenac and Lennox & Addington"
 2020-01-26,"Kingston, Frontenac and Lennox & Addington"
 2020-01-27,"Kingston, Frontenac and Lennox & Addington"
@@ -1217,6 +1237,7 @@ Date,Public_Health_Unit
 2020-03-20,"Kingston, Frontenac and Lennox & Addington"
 2020-03-21,"Kingston, Frontenac and Lennox & Addington"
 2020-03-22,"Kingston, Frontenac and Lennox & Addington"
+2020-03-23,"Kingston, Frontenac and Lennox & Addington"
 2020-01-25,Chatham Kent
 2020-01-26,Chatham Kent
 2020-01-27,Chatham Kent
@@ -1275,6 +1296,7 @@ Date,Public_Health_Unit
 2020-03-20,Chatham Kent
 2020-03-21,Chatham Kent
 2020-03-22,Chatham Kent
+2020-03-23,Chatham Kent
 2020-01-25,Brant
 2020-01-26,Brant
 2020-01-27,Brant
@@ -1333,6 +1355,7 @@ Date,Public_Health_Unit
 2020-03-20,Brant
 2020-03-21,Brant
 2020-03-22,Brant
+2020-03-23,Brant
 2020-01-25,Algoma
 2020-01-26,Algoma
 2020-01-27,Algoma
@@ -1391,6 +1414,7 @@ Date,Public_Health_Unit
 2020-03-20,Algoma
 2020-03-21,Algoma
 2020-03-22,Algoma
+2020-03-23,Algoma
 2020-01-25,Hastings Prince Edward
 2020-01-26,Hastings Prince Edward
 2020-01-27,Hastings Prince Edward
@@ -1449,6 +1473,7 @@ Date,Public_Health_Unit
 2020-03-20,Hastings Prince Edward
 2020-03-21,Hastings Prince Edward
 2020-03-22,Hastings Prince Edward
+2020-03-23,Hastings Prince Edward
 2020-01-25,Porcupine
 2020-01-26,Porcupine
 2020-01-27,Porcupine
@@ -1507,6 +1532,7 @@ Date,Public_Health_Unit
 2020-03-20,Porcupine
 2020-03-21,Porcupine
 2020-03-22,Porcupine
+2020-03-23,Porcupine
 2020-01-25,Windsor Essex
 2020-01-26,Windsor Essex
 2020-01-27,Windsor Essex
@@ -1565,3 +1591,181 @@ Date,Public_Health_Unit
 2020-03-20,Windsor Essex
 2020-03-21,Windsor Essex
 2020-03-22,Windsor Essex
+2020-03-23,Windsor Essex
+2020-01-25,Haliburton Kawartha Pineridge
+2020-01-26,Haliburton Kawartha Pineridge
+2020-01-27,Haliburton Kawartha Pineridge
+2020-01-28,Haliburton Kawartha Pineridge
+2020-01-29,Haliburton Kawartha Pineridge
+2020-01-30,Haliburton Kawartha Pineridge
+2020-01-31,Haliburton Kawartha Pineridge
+2020-02-01,Haliburton Kawartha Pineridge
+2020-02-02,Haliburton Kawartha Pineridge
+2020-02-03,Haliburton Kawartha Pineridge
+2020-02-04,Haliburton Kawartha Pineridge
+2020-02-05,Haliburton Kawartha Pineridge
+2020-02-06,Haliburton Kawartha Pineridge
+2020-02-07,Haliburton Kawartha Pineridge
+2020-02-08,Haliburton Kawartha Pineridge
+2020-02-09,Haliburton Kawartha Pineridge
+2020-02-10,Haliburton Kawartha Pineridge
+2020-02-11,Haliburton Kawartha Pineridge
+2020-02-12,Haliburton Kawartha Pineridge
+2020-02-13,Haliburton Kawartha Pineridge
+2020-02-14,Haliburton Kawartha Pineridge
+2020-02-15,Haliburton Kawartha Pineridge
+2020-02-16,Haliburton Kawartha Pineridge
+2020-02-17,Haliburton Kawartha Pineridge
+2020-02-18,Haliburton Kawartha Pineridge
+2020-02-19,Haliburton Kawartha Pineridge
+2020-02-20,Haliburton Kawartha Pineridge
+2020-02-21,Haliburton Kawartha Pineridge
+2020-02-22,Haliburton Kawartha Pineridge
+2020-02-23,Haliburton Kawartha Pineridge
+2020-02-24,Haliburton Kawartha Pineridge
+2020-02-25,Haliburton Kawartha Pineridge
+2020-02-26,Haliburton Kawartha Pineridge
+2020-02-27,Haliburton Kawartha Pineridge
+2020-02-28,Haliburton Kawartha Pineridge
+2020-02-29,Haliburton Kawartha Pineridge
+2020-03-01,Haliburton Kawartha Pineridge
+2020-03-02,Haliburton Kawartha Pineridge
+2020-03-03,Haliburton Kawartha Pineridge
+2020-03-04,Haliburton Kawartha Pineridge
+2020-03-05,Haliburton Kawartha Pineridge
+2020-03-06,Haliburton Kawartha Pineridge
+2020-03-07,Haliburton Kawartha Pineridge
+2020-03-08,Haliburton Kawartha Pineridge
+2020-03-09,Haliburton Kawartha Pineridge
+2020-03-10,Haliburton Kawartha Pineridge
+2020-03-11,Haliburton Kawartha Pineridge
+2020-03-12,Haliburton Kawartha Pineridge
+2020-03-13,Haliburton Kawartha Pineridge
+2020-03-14,Haliburton Kawartha Pineridge
+2020-03-15,Haliburton Kawartha Pineridge
+2020-03-16,Haliburton Kawartha Pineridge
+2020-03-17,Haliburton Kawartha Pineridge
+2020-03-18,Haliburton Kawartha Pineridge
+2020-03-19,Haliburton Kawartha Pineridge
+2020-03-20,Haliburton Kawartha Pineridge
+2020-03-21,Haliburton Kawartha Pineridge
+2020-03-22,Haliburton Kawartha Pineridge
+2020-03-23,Haliburton Kawartha Pineridge
+2020-01-25,Sudbury
+2020-01-26,Sudbury
+2020-01-27,Sudbury
+2020-01-28,Sudbury
+2020-01-29,Sudbury
+2020-01-30,Sudbury
+2020-01-31,Sudbury
+2020-02-01,Sudbury
+2020-02-02,Sudbury
+2020-02-03,Sudbury
+2020-02-04,Sudbury
+2020-02-05,Sudbury
+2020-02-06,Sudbury
+2020-02-07,Sudbury
+2020-02-08,Sudbury
+2020-02-09,Sudbury
+2020-02-10,Sudbury
+2020-02-11,Sudbury
+2020-02-12,Sudbury
+2020-02-13,Sudbury
+2020-02-14,Sudbury
+2020-02-15,Sudbury
+2020-02-16,Sudbury
+2020-02-17,Sudbury
+2020-02-18,Sudbury
+2020-02-19,Sudbury
+2020-02-20,Sudbury
+2020-02-21,Sudbury
+2020-02-22,Sudbury
+2020-02-23,Sudbury
+2020-02-24,Sudbury
+2020-02-25,Sudbury
+2020-02-26,Sudbury
+2020-02-27,Sudbury
+2020-02-28,Sudbury
+2020-02-29,Sudbury
+2020-03-01,Sudbury
+2020-03-02,Sudbury
+2020-03-03,Sudbury
+2020-03-04,Sudbury
+2020-03-05,Sudbury
+2020-03-06,Sudbury
+2020-03-07,Sudbury
+2020-03-08,Sudbury
+2020-03-09,Sudbury
+2020-03-10,Sudbury
+2020-03-11,Sudbury
+2020-03-12,Sudbury
+2020-03-13,Sudbury
+2020-03-14,Sudbury
+2020-03-15,Sudbury
+2020-03-16,Sudbury
+2020-03-17,Sudbury
+2020-03-18,Sudbury
+2020-03-19,Sudbury
+2020-03-20,Sudbury
+2020-03-21,Sudbury
+2020-03-22,Sudbury
+2020-03-23,Sudbury
+2020-01-25,"Kingston, Frontenac, Lennox and Addington"
+2020-01-26,"Kingston, Frontenac, Lennox and Addington"
+2020-01-27,"Kingston, Frontenac, Lennox and Addington"
+2020-01-28,"Kingston, Frontenac, Lennox and Addington"
+2020-01-29,"Kingston, Frontenac, Lennox and Addington"
+2020-01-30,"Kingston, Frontenac, Lennox and Addington"
+2020-01-31,"Kingston, Frontenac, Lennox and Addington"
+2020-02-01,"Kingston, Frontenac, Lennox and Addington"
+2020-02-02,"Kingston, Frontenac, Lennox and Addington"
+2020-02-03,"Kingston, Frontenac, Lennox and Addington"
+2020-02-04,"Kingston, Frontenac, Lennox and Addington"
+2020-02-05,"Kingston, Frontenac, Lennox and Addington"
+2020-02-06,"Kingston, Frontenac, Lennox and Addington"
+2020-02-07,"Kingston, Frontenac, Lennox and Addington"
+2020-02-08,"Kingston, Frontenac, Lennox and Addington"
+2020-02-09,"Kingston, Frontenac, Lennox and Addington"
+2020-02-10,"Kingston, Frontenac, Lennox and Addington"
+2020-02-11,"Kingston, Frontenac, Lennox and Addington"
+2020-02-12,"Kingston, Frontenac, Lennox and Addington"
+2020-02-13,"Kingston, Frontenac, Lennox and Addington"
+2020-02-14,"Kingston, Frontenac, Lennox and Addington"
+2020-02-15,"Kingston, Frontenac, Lennox and Addington"
+2020-02-16,"Kingston, Frontenac, Lennox and Addington"
+2020-02-17,"Kingston, Frontenac, Lennox and Addington"
+2020-02-18,"Kingston, Frontenac, Lennox and Addington"
+2020-02-19,"Kingston, Frontenac, Lennox and Addington"
+2020-02-20,"Kingston, Frontenac, Lennox and Addington"
+2020-02-21,"Kingston, Frontenac, Lennox and Addington"
+2020-02-22,"Kingston, Frontenac, Lennox and Addington"
+2020-02-23,"Kingston, Frontenac, Lennox and Addington"
+2020-02-24,"Kingston, Frontenac, Lennox and Addington"
+2020-02-25,"Kingston, Frontenac, Lennox and Addington"
+2020-02-26,"Kingston, Frontenac, Lennox and Addington"
+2020-02-27,"Kingston, Frontenac, Lennox and Addington"
+2020-02-28,"Kingston, Frontenac, Lennox and Addington"
+2020-02-29,"Kingston, Frontenac, Lennox and Addington"
+2020-03-01,"Kingston, Frontenac, Lennox and Addington"
+2020-03-02,"Kingston, Frontenac, Lennox and Addington"
+2020-03-03,"Kingston, Frontenac, Lennox and Addington"
+2020-03-04,"Kingston, Frontenac, Lennox and Addington"
+2020-03-05,"Kingston, Frontenac, Lennox and Addington"
+2020-03-06,"Kingston, Frontenac, Lennox and Addington"
+2020-03-07,"Kingston, Frontenac, Lennox and Addington"
+2020-03-08,"Kingston, Frontenac, Lennox and Addington"
+2020-03-09,"Kingston, Frontenac, Lennox and Addington"
+2020-03-10,"Kingston, Frontenac, Lennox and Addington"
+2020-03-11,"Kingston, Frontenac, Lennox and Addington"
+2020-03-12,"Kingston, Frontenac, Lennox and Addington"
+2020-03-13,"Kingston, Frontenac, Lennox and Addington"
+2020-03-14,"Kingston, Frontenac, Lennox and Addington"
+2020-03-15,"Kingston, Frontenac, Lennox and Addington"
+2020-03-16,"Kingston, Frontenac, Lennox and Addington"
+2020-03-17,"Kingston, Frontenac, Lennox and Addington"
+2020-03-18,"Kingston, Frontenac, Lennox and Addington"
+2020-03-19,"Kingston, Frontenac, Lennox and Addington"
+2020-03-20,"Kingston, Frontenac, Lennox and Addington"
+2020-03-21,"Kingston, Frontenac, Lennox and Addington"
+2020-03-22,"Kingston, Frontenac, Lennox and Addington"
+2020-03-23,"Kingston, Frontenac, Lennox and Addington"
