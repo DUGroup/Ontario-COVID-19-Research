@@ -502,3 +502,88 @@ Case_number,age_gender,Public_Health_Unit,Hospital,Transmission,Status,Date
 501,pending,pending,,pending,pending,2020-03-23
 502,pending,pending,,pending,pending,2020-03-23
 503,pending,pending,,pending,pending,2020-03-23
+504,30s Male,Kingston Frontenac Lennox Addington,,travel (UK),self-isolating,2020-03-24
+505,70s Female,Kingston Frontenac Lennox Addington,,travel (Singapore),self-isolating,2020-03-24
+506,70s Male,Kingston Frontenac Lennox Addington,,travel (Singapore),self-isolating,2020-03-24
+507,40s Female,Waterloo,,pending,self-isolating,2020-03-24
+508,30s Female,Toronto,,pending,self-isolating,2020-03-24
+509,40s Female,Brant,,pending,self-isolating,2020-03-24
+510,20s Female,Peel,,pending,self-isolating,2020-03-24
+511,30s Female,Halton,,travel (UK),self-isolating,2020-03-24
+512,80s Male,Wellington Dufferin Guelph,,pending,hospitalized,2020-03-24
+513,30s Female,Grey Bruce,,travel (Italy),self-isolating,2020-03-24
+514,40s Male,Windsor Essex,,travel (USA),self-isolating,2020-03-24
+515,50s Female,Hamilton,,pending,pending,2020-03-24
+516,30s Female,Hamilton,,close contact,self-isolating,2020-03-24
+517,60s Male,Hamilton,,pending,pending,2020-03-24
+518,40s Male,Niagara,,pending,pending,2020-03-24
+519,60s Male,Waterloo,,pending,hospitalized,2020-03-24
+520,30s Female,Ottawa,,close contact,self-isolating,2020-03-24
+521,40s Male,Ottawa,,close contact,self-isolating,2020-03-24
+522,30s Male,Toronto,,close contact,self-isolating,2020-03-24
+523,80s Male,York,,pending,self-isolating,2020-03-24
+524,40s Male,York,,pending,self-isolating,2020-03-24
+525,60s Female,York,,close contact,pending,2020-03-24
+526,60s Male,Toronto,,pending,self-isolating,2020-03-24
+527,50s Female,Toronto,,pending,self-isolating,2020-03-24
+528,70s Female,Sudbury,,travel (USA),self-isolating,2020-03-24
+529,50s Female,Peel,,travel (Dubai),self-isolating,2020-03-24
+530,50s Male,Ottawa,,travel (USA),self-isolating,2020-03-24
+531,30s Male,Toronto,,pending,pending,2020-03-24
+532,70s Male,Toronto,,pending,pending,2020-03-24
+533,50s Male,Toronto,,pending,pending,2020-03-24
+534,70s Male,Toronto,,pending,pending,2020-03-24
+535,20s Female,Toronto,,pending,pending,2020-03-24
+536,60s Male,Toronto,,pending,pending,2020-03-24
+537,50s Female,Durham,,travel (USA),self-isolation,2020-03-24
+538,70s Male,York,,travel (USA),self-isolation,2020-03-24
+539,40s Male,Durham,,travel,self-isolation,2020-03-24
+540,50s Male,Toronto,,travel (USA),self-isolation,2020-03-24
+541,50s Male,Toronto,,travel (Austria),self-isolation,2020-03-24
+542,30s Female,Toronto,,travel (USA),self-isolation,2020-03-24
+543,60s Male,York,,pending,self-isolation,2020-03-24
+544,60s Female,Peel,,travel (Dubai),self-isolation,2020-03-24
+545,50s Female,Toronto,,pending,pending,2020-03-24
+546,50s Male,Toronto,,travel (Austria),self-isolation,2020-03-24
+547,50s Female,Toronto,,travel (Austria),self-isolation,2020-03-24
+548,30s Male,Toronto,,travel (Brazil),self-isolation,2020-03-24
+549,90s Male,Durham,,pending,deceased,2020-03-24
+550,pending,pending,,pending,pending,2020-03-24
+551,pending,pending,,pending,pending,2020-03-24
+552,pending,pending,,pending,pending,2020-03-24
+553,pending,pending,,pending,pending,2020-03-24
+554,pending,pending,,pending,pending,2020-03-24
+555,pending,pending,,pending,pending,2020-03-24
+556,pending,pending,,pending,pending,2020-03-24
+557,pending,pending,,pending,pending,2020-03-24
+558,pending,pending,,pending,pending,2020-03-24
+559,pending,pending,,pending,pending,2020-03-24
+560,pending,pending,,pending,pending,2020-03-24
+561,pending,pending,,pending,pending,2020-03-24
+562,pending,pending,,pending,pending,2020-03-24
+563,pending,pending,,pending,pending,2020-03-24
+564,pending,pending,,pending,pending,2020-03-24
+565,pending,pending,,pending,pending,2020-03-24
+566,pending,pending,,pending,pending,2020-03-24
+567,pending,pending,,pending,pending,2020-03-24
+568,pending,pending,,pending,pending,2020-03-24
+569,pending,pending,,pending,pending,2020-03-24
+570,pending,pending,,pending,pending,2020-03-24
+571,pending,pending,,pending,pending,2020-03-24
+572,pending,pending,,pending,pending,2020-03-24
+573,pending,pending,,pending,pending,2020-03-24
+574,pending,pending,,pending,pending,2020-03-24
+575,pending,pending,,pending,pending,2020-03-24
+576,pending,pending,,pending,pending,2020-03-24
+577,pending,pending,,pending,pending,2020-03-24
+578,pending,pending,,pending,pending,2020-03-24
+579,pending,pending,,pending,pending,2020-03-24
+580,pending,pending,,pending,pending,2020-03-24
+581,pending,pending,,pending,pending,2020-03-24
+582,pending,pending,,pending,pending,2020-03-24
+583,pending,pending,,pending,pending,2020-03-24
+584,pending,pending,,pending,pending,2020-03-24
+585,pending,pending,,pending,pending,2020-03-24
+586,pending,pending,,pending,pending,2020-03-24
+587,pending,pending,,pending,pending,2020-03-24
+588,pending,pending,,pending,pending,2020-03-24
