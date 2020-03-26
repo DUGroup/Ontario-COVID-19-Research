@@ -60,6 +60,7 @@ Date,Public_Health_Unit
 2020-03-23,Toronto
 2020-03-24,Toronto
 2020-03-25,Toronto
+2020-03-26,Toronto
 2020-01-25,Middlesex London
 2020-01-26,Middlesex London
 2020-01-27,Middlesex London
@@ -121,6 +122,7 @@ Date,Public_Health_Unit
 2020-03-23,Middlesex London
 2020-03-24,Middlesex London
 2020-03-25,Middlesex London
+2020-03-26,Middlesex London
 2020-01-25,Pending or Not Available
 2020-01-26,Pending or Not Available
 2020-01-27,Pending or Not Available
@@ -182,6 +184,7 @@ Date,Public_Health_Unit
 2020-03-23,Pending or Not Available
 2020-03-24,Pending or Not Available
 2020-03-25,Pending or Not Available
+2020-03-26,Pending or Not Available
 2020-01-25,York
 2020-01-26,York
 2020-01-27,York
@@ -243,6 +246,7 @@ Date,Public_Health_Unit
 2020-03-23,York
 2020-03-24,York
 2020-03-25,York
+2020-03-26,York
 2020-01-25,Durham
 2020-01-26,Durham
 2020-01-27,Durham
@@ -304,6 +308,7 @@ Date,Public_Health_Unit
 2020-03-23,Durham
 2020-03-24,Durham
 2020-03-25,Durham
+2020-03-26,Durham
 2020-01-25,Waterloo
 2020-01-26,Waterloo
 2020-01-27,Waterloo
@@ -365,6 +370,7 @@ Date,Public_Health_Unit
 2020-03-23,Waterloo
 2020-03-24,Waterloo
 2020-03-25,Waterloo
+2020-03-26,Waterloo
 2020-01-25,Peel
 2020-01-26,Peel
 2020-01-27,Peel
@@ -426,6 +432,7 @@ Date,Public_Health_Unit
 2020-03-23,Peel
 2020-03-24,Peel
 2020-03-25,Peel
+2020-03-26,Peel
 2020-01-25,Sudbury and District
 2020-01-26,Sudbury and District
 2020-01-27,Sudbury and District
@@ -487,6 +494,7 @@ Date,Public_Health_Unit
 2020-03-23,Sudbury and District
 2020-03-24,Sudbury and District
 2020-03-25,Sudbury and District
+2020-03-26,Sudbury and District
 2020-01-25,Ottawa
 2020-01-26,Ottawa
 2020-01-27,Ottawa
@@ -548,6 +556,7 @@ Date,Public_Health_Unit
 2020-03-23,Ottawa
 2020-03-24,Ottawa
 2020-03-25,Ottawa
+2020-03-26,Ottawa
 2020-01-25,Halton
 2020-01-26,Halton
 2020-01-27,Halton
@@ -609,6 +618,7 @@ Date,Public_Health_Unit
 2020-03-23,Halton
 2020-03-24,Halton
 2020-03-25,Halton
+2020-03-26,Halton
 2020-01-25,Hamilton
 2020-01-26,Hamilton
 2020-01-27,Hamilton
@@ -670,6 +680,7 @@ Date,Public_Health_Unit
 2020-03-23,Hamilton
 2020-03-24,Hamilton
 2020-03-25,Hamilton
+2020-03-26,Hamilton
 2020-01-25,Simcoe Muskoka
 2020-01-26,Simcoe Muskoka
 2020-01-27,Simcoe Muskoka
@@ -731,6 +742,7 @@ Date,Public_Health_Unit
 2020-03-23,Simcoe Muskoka
 2020-03-24,Simcoe Muskoka
 2020-03-25,Simcoe Muskoka
+2020-03-26,Simcoe Muskoka
 2020-01-25,Niagara
 2020-01-26,Niagara
 2020-01-27,Niagara
@@ -792,6 +804,7 @@ Date,Public_Health_Unit
 2020-03-23,Niagara
 2020-03-24,Niagara
 2020-03-25,Niagara
+2020-03-26,Niagara
 2020-01-25,"Haliburton,Kawartha,Pine Ridge"
 2020-01-26,"Haliburton,Kawartha,Pine Ridge"
 2020-01-27,"Haliburton,Kawartha,Pine Ridge"
@@ -853,6 +866,7 @@ Date,Public_Health_Unit
 2020-03-23,"Haliburton,Kawartha,Pine Ridge"
 2020-03-24,"Haliburton,Kawartha,Pine Ridge"
 2020-03-25,"Haliburton,Kawartha,Pine Ridge"
+2020-03-26,"Haliburton,Kawartha,Pine Ridge"
 2020-01-25,Huron Perth
 2020-01-26,Huron Perth
 2020-01-27,Huron Perth
@@ -914,6 +928,7 @@ Date,Public_Health_Unit
 2020-03-23,Huron Perth
 2020-03-24,Huron Perth
 2020-03-25,Huron Perth
+2020-03-26,Huron Perth
 2020-01-25,Northwestern
 2020-01-26,Northwestern
 2020-01-27,Northwestern
@@ -975,6 +990,7 @@ Date,Public_Health_Unit
 2020-03-23,Northwestern
 2020-03-24,Northwestern
 2020-03-25,Northwestern
+2020-03-26,Northwestern
 2020-01-25,Eastern Ontario
 2020-01-26,Eastern Ontario
 2020-01-27,Eastern Ontario
@@ -1036,6 +1052,7 @@ Date,Public_Health_Unit
 2020-03-23,Eastern Ontario
 2020-03-24,Eastern Ontario
 2020-03-25,Eastern Ontario
+2020-03-26,Eastern Ontario
 2020-01-25,Grey Bruce
 2020-01-26,Grey Bruce
 2020-01-27,Grey Bruce
@@ -1097,6 +1114,7 @@ Date,Public_Health_Unit
 2020-03-23,Grey Bruce
 2020-03-24,Grey Bruce
 2020-03-25,Grey Bruce
+2020-03-26,Grey Bruce
 2020-01-25,Peterborough
 2020-01-26,Peterborough
 2020-01-27,Peterborough
@@ -1158,6 +1176,7 @@ Date,Public_Health_Unit
 2020-03-23,Peterborough
 2020-03-24,Peterborough
 2020-03-25,Peterborough
+2020-03-26,Peterborough
 2020-01-25,Wellington Dufferin Guelph
 2020-01-26,Wellington Dufferin Guelph
 2020-01-27,Wellington Dufferin Guelph
@@ -1219,6 +1238,7 @@ Date,Public_Health_Unit
 2020-03-23,Wellington Dufferin Guelph
 2020-03-24,Wellington Dufferin Guelph
 2020-03-25,Wellington Dufferin Guelph
+2020-03-26,Wellington Dufferin Guelph
 2020-01-25,"Kingston, Frontenac and Lennox & Addington"
 2020-01-26,"Kingston, Frontenac and Lennox & Addington"
 2020-01-27,"Kingston, Frontenac and Lennox & Addington"
@@ -1280,6 +1300,7 @@ Date,Public_Health_Unit
 2020-03-23,"Kingston, Frontenac and Lennox & Addington"
 2020-03-24,"Kingston, Frontenac and Lennox & Addington"
 2020-03-25,"Kingston, Frontenac and Lennox & Addington"
+2020-03-26,"Kingston, Frontenac and Lennox & Addington"
 2020-01-25,Chatham Kent
 2020-01-26,Chatham Kent
 2020-01-27,Chatham Kent
@@ -1341,6 +1362,7 @@ Date,Public_Health_Unit
 2020-03-23,Chatham Kent
 2020-03-24,Chatham Kent
 2020-03-25,Chatham Kent
+2020-03-26,Chatham Kent
 2020-01-25,Brant
 2020-01-26,Brant
 2020-01-27,Brant
@@ -1402,6 +1424,7 @@ Date,Public_Health_Unit
 2020-03-23,Brant
 2020-03-24,Brant
 2020-03-25,Brant
+2020-03-26,Brant
 2020-01-25,Algoma
 2020-01-26,Algoma
 2020-01-27,Algoma
@@ -1463,6 +1486,7 @@ Date,Public_Health_Unit
 2020-03-23,Algoma
 2020-03-24,Algoma
 2020-03-25,Algoma
+2020-03-26,Algoma
 2020-01-25,Hastings Prince Edward
 2020-01-26,Hastings Prince Edward
 2020-01-27,Hastings Prince Edward
@@ -1524,6 +1548,7 @@ Date,Public_Health_Unit
 2020-03-23,Hastings Prince Edward
 2020-03-24,Hastings Prince Edward
 2020-03-25,Hastings Prince Edward
+2020-03-26,Hastings Prince Edward
 2020-01-25,Porcupine District
 2020-01-26,Porcupine District
 2020-01-27,Porcupine District
@@ -1585,6 +1610,7 @@ Date,Public_Health_Unit
 2020-03-23,Porcupine District
 2020-03-24,Porcupine District
 2020-03-25,Porcupine District
+2020-03-26,Porcupine District
 2020-01-25,Windsor Essex
 2020-01-26,Windsor Essex
 2020-01-27,Windsor Essex
@@ -1646,6 +1672,7 @@ Date,Public_Health_Unit
 2020-03-23,Windsor Essex
 2020-03-24,Windsor Essex
 2020-03-25,Windsor Essex
+2020-03-26,Windsor Essex
 2020-01-25,Timiskaming
 2020-01-26,Timiskaming
 2020-01-27,Timiskaming
@@ -1707,3 +1734,190 @@ Date,Public_Health_Unit
 2020-03-23,Timiskaming
 2020-03-24,Timiskaming
 2020-03-25,Timiskaming
+2020-03-26,Timiskaming
+2020-01-25,North Bay Parry Sound
+2020-01-26,North Bay Parry Sound
+2020-01-27,North Bay Parry Sound
+2020-01-28,North Bay Parry Sound
+2020-01-29,North Bay Parry Sound
+2020-01-30,North Bay Parry Sound
+2020-01-31,North Bay Parry Sound
+2020-02-01,North Bay Parry Sound
+2020-02-02,North Bay Parry Sound
+2020-02-03,North Bay Parry Sound
+2020-02-04,North Bay Parry Sound
+2020-02-05,North Bay Parry Sound
+2020-02-06,North Bay Parry Sound
+2020-02-07,North Bay Parry Sound
+2020-02-08,North Bay Parry Sound
+2020-02-09,North Bay Parry Sound
+2020-02-10,North Bay Parry Sound
+2020-02-11,North Bay Parry Sound
+2020-02-12,North Bay Parry Sound
+2020-02-13,North Bay Parry Sound
+2020-02-14,North Bay Parry Sound
+2020-02-15,North Bay Parry Sound
+2020-02-16,North Bay Parry Sound
+2020-02-17,North Bay Parry Sound
+2020-02-18,North Bay Parry Sound
+2020-02-19,North Bay Parry Sound
+2020-02-20,North Bay Parry Sound
+2020-02-21,North Bay Parry Sound
+2020-02-22,North Bay Parry Sound
+2020-02-23,North Bay Parry Sound
+2020-02-24,North Bay Parry Sound
+2020-02-25,North Bay Parry Sound
+2020-02-26,North Bay Parry Sound
+2020-02-27,North Bay Parry Sound
+2020-02-28,North Bay Parry Sound
+2020-02-29,North Bay Parry Sound
+2020-03-01,North Bay Parry Sound
+2020-03-02,North Bay Parry Sound
+2020-03-03,North Bay Parry Sound
+2020-03-04,North Bay Parry Sound
+2020-03-05,North Bay Parry Sound
+2020-03-06,North Bay Parry Sound
+2020-03-07,North Bay Parry Sound
+2020-03-08,North Bay Parry Sound
+2020-03-09,North Bay Parry Sound
+2020-03-10,North Bay Parry Sound
+2020-03-11,North Bay Parry Sound
+2020-03-12,North Bay Parry Sound
+2020-03-13,North Bay Parry Sound
+2020-03-14,North Bay Parry Sound
+2020-03-15,North Bay Parry Sound
+2020-03-16,North Bay Parry Sound
+2020-03-17,North Bay Parry Sound
+2020-03-18,North Bay Parry Sound
+2020-03-19,North Bay Parry Sound
+2020-03-20,North Bay Parry Sound
+2020-03-21,North Bay Parry Sound
+2020-03-22,North Bay Parry Sound
+2020-03-23,North Bay Parry Sound
+2020-03-24,North Bay Parry Sound
+2020-03-25,North Bay Parry Sound
+2020-03-26,North Bay Parry Sound
+2020-01-25,Oxford
+2020-01-26,Oxford
+2020-01-27,Oxford
+2020-01-28,Oxford
+2020-01-29,Oxford
+2020-01-30,Oxford
+2020-01-31,Oxford
+2020-02-01,Oxford
+2020-02-02,Oxford
+2020-02-03,Oxford
+2020-02-04,Oxford
+2020-02-05,Oxford
+2020-02-06,Oxford
+2020-02-07,Oxford
+2020-02-08,Oxford
+2020-02-09,Oxford
+2020-02-10,Oxford
+2020-02-11,Oxford
+2020-02-12,Oxford
+2020-02-13,Oxford
+2020-02-14,Oxford
+2020-02-15,Oxford
+2020-02-16,Oxford
+2020-02-17,Oxford
+2020-02-18,Oxford
+2020-02-19,Oxford
+2020-02-20,Oxford
+2020-02-21,Oxford
+2020-02-22,Oxford
+2020-02-23,Oxford
+2020-02-24,Oxford
+2020-02-25,Oxford
+2020-02-26,Oxford
+2020-02-27,Oxford
+2020-02-28,Oxford
+2020-02-29,Oxford
+2020-03-01,Oxford
+2020-03-02,Oxford
+2020-03-03,Oxford
+2020-03-04,Oxford
+2020-03-05,Oxford
+2020-03-06,Oxford
+2020-03-07,Oxford
+2020-03-08,Oxford
+2020-03-09,Oxford
+2020-03-10,Oxford
+2020-03-11,Oxford
+2020-03-12,Oxford
+2020-03-13,Oxford
+2020-03-14,Oxford
+2020-03-15,Oxford
+2020-03-16,Oxford
+2020-03-17,Oxford
+2020-03-18,Oxford
+2020-03-19,Oxford
+2020-03-20,Oxford
+2020-03-21,Oxford
+2020-03-22,Oxford
+2020-03-23,Oxford
+2020-03-24,Oxford
+2020-03-25,Oxford
+2020-03-26,Oxford
+2020-01-25,Lambton
+2020-01-26,Lambton
+2020-01-27,Lambton
+2020-01-28,Lambton
+2020-01-29,Lambton
+2020-01-30,Lambton
+2020-01-31,Lambton
+2020-02-01,Lambton
+2020-02-02,Lambton
+2020-02-03,Lambton
+2020-02-04,Lambton
+2020-02-05,Lambton
+2020-02-06,Lambton
+2020-02-07,Lambton
+2020-02-08,Lambton
+2020-02-09,Lambton
+2020-02-10,Lambton
+2020-02-11,Lambton
+2020-02-12,Lambton
+2020-02-13,Lambton
+2020-02-14,Lambton
+2020-02-15,Lambton
+2020-02-16,Lambton
+2020-02-17,Lambton
+2020-02-18,Lambton
+2020-02-19,Lambton
+2020-02-20,Lambton
+2020-02-21,Lambton
+2020-02-22,Lambton
+2020-02-23,Lambton
+2020-02-24,Lambton
+2020-02-25,Lambton
+2020-02-26,Lambton
+2020-02-27,Lambton
+2020-02-28,Lambton
+2020-02-29,Lambton
+2020-03-01,Lambton
+2020-03-02,Lambton
+2020-03-03,Lambton
+2020-03-04,Lambton
+2020-03-05,Lambton
+2020-03-06,Lambton
+2020-03-07,Lambton
+2020-03-08,Lambton
+2020-03-09,Lambton
+2020-03-10,Lambton
+2020-03-11,Lambton
+2020-03-12,Lambton
+2020-03-13,Lambton
+2020-03-14,Lambton
+2020-03-15,Lambton
+2020-03-16,Lambton
+2020-03-17,Lambton
+2020-03-18,Lambton
+2020-03-19,Lambton
+2020-03-20,Lambton
+2020-03-21,Lambton
+2020-03-22,Lambton
+2020-03-23,Lambton
+2020-03-24,Lambton
+2020-03-25,Lambton
+2020-03-26,Lambton

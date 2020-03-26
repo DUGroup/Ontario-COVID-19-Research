@@ -687,3 +687,173 @@ Case_number,age_gender,Public_Health_Unit,Hospital,Transmission,Status,Date
 686,pending,pending,,pending,pending,2020-03-25
 687,pending,pending,,pending,pending,2020-03-25
 688,pending,pending,,pending,pending,2020-03-25
+689,60s Male,Ottawa,,travel (Spain),self-isolating,2020-03-26
+690,60s Female,Ottawa,,"travel (Egypt, Dubai)",hospitalized,2020-03-26
+691,40s Female,Ottawa,,pending,self-isolating,2020-03-26
+692,60s Male,Ottawa,,travel (Spain),hospitalized,2020-03-26
+693,40s Female,Peel,,close contact,self-isolating,2020-03-26
+694,60s Female,Peel,,travel (Germany),self-isolating,2020-03-26
+695,60s Male,Toronto,,pending,pending,2020-03-26
+696,20s Male,Toronto,,pending,pending,2020-03-26
+697,20s Male,York,,travel (Denmark),self-isolating,2020-03-26
+698,< 20 Female,York,,close contact,self-isolating,2020-03-26
+699,40s Female,Toronto,,travel (UK),self-isolating,2020-03-26
+700,30s Male,Peel,,pending,self-isolating,2020-03-26
+701,30s Male,Toronto,,pending,self-isolating,2020-03-26
+702,20s Female,Toronto,,pending,self-isolating,2020-03-26
+703,60s Male,York,,travel (USA),self-isolating,2020-03-26
+704,30s Female,Toronto,,travel (USA),self-isolating,2020-03-26
+705,50s Female,York,,close contact,pending,2020-03-26
+706,30s Male,Toronto,,close contact,self-isolating,2020-03-26
+707,< 20 Male,Waterloo,,close contact,self-isolating,2020-03-26
+708,30s Male,Waterloo,,close contact,self-isolating,2020-03-26
+709,50s Female,Waterloo,,pending,self-isolating,2020-03-26
+710,30s Male,York,,travel (USA),self-isolating,2020-03-26
+711,70s Female,York,,pending,pending,2020-03-26
+712,60s Female,York,,pending,pending,2020-03-26
+713,40s Female,Niagara,,travel (Caribbean cruise),self-isolating,2020-03-26
+714,40s Male,York,,travel (USA),self-isolating,2020-03-26
+715,40s Male,Durham,,pending,self-isolating,2020-03-26
+716,30s Female,York,,close contact,pending,2020-03-26
+717,70s Female,York,,close contact,pending,2020-03-26
+718,50s Male,Simcoe Muskoka,,travel (USA),pending,2020-03-26
+719,50s Male,Haliburton Kawartha Pineridge,,close contact,self-isolating,2020-03-26
+720,20s Female,Halton,,travel (USA),self-isolating,2020-03-26
+721,60s Male,Toronto,,pending,pending,2020-03-26
+722,60s Male,Toronto,,pending,self-isolating,2020-03-26
+723,50s Female,Peel,,pending,self-isolating,2020-03-26
+724,50s Male,Peel,,travel (Jamaica),pending,2020-03-26
+725,40s Male,Peel,,travel (USA),self-isolating,2020-03-26
+726,< 20 Female,Toronto,,pending,self-isolating,2020-03-26
+727,60s Female,Haliburton Kawartha Pineridge,,travel (Egypt),self-isolating,2020-03-26
+728,50s Female,Durham,,travel (USA),self-isolating,2020-03-26
+729,50s Male,Durham,,travel (Cruise),self-isolating,2020-03-26
+730,80s Female,Durham,,close contact,self-isolating,2020-03-26
+731,30s Male,Peel,,close contact,self-isolating,2020-03-26
+732,30s Female,Toronto,,travel (Ecuador),pending,2020-03-26
+733,50s Male,York,,"travel (Germany, Austria)",self-isolating,2020-03-26
+734,60s Male,York,,travel (London),self-isolating,2020-03-26
+735,30s Female,York,,travel (Costa Rica),self-isolating,2020-03-26
+736,20s Male,Peterborough,,travel (Colombia),self-isolating,2020-03-26
+737,20s Male,Northwestern,,travel (Colombia),self-isolating,2020-03-26
+738,50s Female,Peel,,"travel (Dubai, Philippines)",self-isolating,2020-03-26
+739,30s Female,Peel,,pending,self-isolating,2020-03-26
+740,40s Male,Toronto,,travel (France),self-isolating,2020-03-26
+741,40s Male,Simcoe Muskoka,,close contact,hospitalized,2020-03-26
+742,40s Male,Peel,,close contact,self-isolating,2020-03-26
+743,80s Female,Haliburton Kawartha Pineridge,,close contact,pending,2020-03-26
+744,70s Male,Haliburton Kawartha Pineridge,,travel (Egypt),self-isolating,2020-03-26
+745,< 20 Male,Peel,,travel (France),self-isolating,2020-03-26
+746,30s Male,York,,close contact,self-isolating,2020-03-26
+747,50s Female,York,,pending,pending,2020-03-26
+748,30s Female,Peel,,pending,self-isolating,2020-03-26
+749,20s pending,Toronto,,pending,pending,2020-03-26
+750,40s pending,Toronto,,close contact,self-isolating,2020-03-26
+751,30s Male,York,,close contact,self-isolating,2020-03-26
+752,20s Female,Toronto,,close contact,self-isolating,2020-03-26
+753,20s Female,Toronto,,close contact,hospitalized,2020-03-26
+754,30s Male,Toronto,,close contact,self-isolating,2020-03-26
+755,50s Male,York,,close contact,self-isolating,2020-03-26
+756,50s Male,York,,close contact,self-isolating,2020-03-26
+757,50s Male,York,,pending,pending,2020-03-26
+758,20s Female,York,,close contact,self-isolating,2020-03-26
+759,60s Male,York,,close contact,self-isolating,2020-03-26
+760,80s Female,Toronto,,pending,pending,2020-03-26
+761,60s Male,Durham,,pending,self-isolating,2020-03-26
+762,80s Male,York,,pending,hospitalized,2020-03-26
+763,40s Male,York,,close contact,self-isolating,2020-03-26
+764,60s Female,York,,close contact,self-isolating,2020-03-26
+765,30s Male,Middlesex London,,close contact,self-isolating,2020-03-26
+766,70s Female,Peel,,pending,hospitalized,2020-03-26
+767,70s Male,York,,close contact,self-isolating,2020-03-26
+768,40s Male,Simcoe Muskoka,,close contact,self-isolating,2020-03-26
+769,60s Male,York,,travel (Austria),self-isolating,2020-03-26
+770,30s Female,Toronto,,close contact,self-isolating,2020-03-26
+771,20s Male,Toronto,,travel (Austria),self-isolating,2020-03-26
+772,30s Female,Haliburton Kawartha Pineridge,,close contact,self-isolating,2020-03-26
+773,30s Female,Haliburton Kawartha Pineridge,,close contact,self-isolating,2020-03-26
+774,60s Female,Haliburton Kawartha Pineridge,,close contact,self-isolating,2020-03-26
+775,50s Female,Haliburton Kawartha Pineridge,,close contact,self-isolating,2020-03-26
+776,50s Female,Haliburton Kawartha Pineridge,,close contact,self-isolating,2020-03-26
+777,60s Female,Haliburton Kawartha Pineridge,,close contact,self-isolating,2020-03-26
+778,60s Female,Haliburton Kawartha Pineridge,,close contact,self-isolating,2020-03-26
+779,60s Female,Haliburton Kawartha Pineridge,,close contact,self-isolating,2020-03-26
+780,40s Female,Haliburton Kawartha Pineridge,,close contact,self-isolating,2020-03-26
+781,40s Female,Haliburton Kawartha Pineridge,,close contact,self-isolating,2020-03-26
+782,90s Female,Toronto,,pending,pending,2020-03-26
+783,50s pending,Grey Bruce,,close contact,pending,2020-03-26
+784,20s Female,York,,close contact,self-isolating,2020-03-26
+785,50s Female,York,,pending,self-isolating,2020-03-26
+786,40s Male,York,,close contact,self-isolating,2020-03-26
+787,30s Female,Peel,,close contact,self-isolating,2020-03-26
+788,60s Female,Peel,,travel (USA),self-isolating,2020-03-26
+789,60s Female,North Bay Parry Sound,,travel (Egypt),self-isolating,2020-03-26
+790,20s Female,York,,travel (France),self-isolating,2020-03-26
+791,< 20 Male,York,,close contact,self-isolating,2020-03-26
+792,40s Female,York,,close contact,self-isolating,2020-03-26
+793,50s Female,York,,close contact,pending,2020-03-26
+794,20s Male,York,,close contact,self-isolating,2020-03-26
+795,30s Female,Simcoe Muskoka,,travel (Italy),self-isolating,2020-03-26
+796,20s Male,Sudbury,,close contact,self-isolating,2020-03-26
+797,90s pending,Toronto,,pending,pending,2020-03-26
+798,20s Male,Niagara,,"travel (Costa Rica, Spain, USA)",self-isolating,2020-03-26
+799,80s Female,Hamilton,,pending,pending,2020-03-26
+800,20s Male,Middlesex London,,pending,hospitalized,2020-03-26
+801,30s Male,Middlesex London,,close contact,self-isolating,2020-03-26
+802,30s Female,Oxford,,close contact,self-isolating,2020-03-26
+803,30s Female,Middlesex London,,travel (USA),self-isolating,2020-03-26
+804,30s Male,Oxford,,close contact,self-isolating,2020-03-26
+805,80s Male,Lambton,,pending,hospitalized,2020-03-26
+806,60s Female,Lambton,,pending,hospitalized,2020-03-26
+807,70s Female,Lambton,,pending,hospitalized,2020-03-26
+808,70s Male,Lambton,,close contact,hospitalized,2020-03-26
+809,80s Male,Lambton,,pending,hospitalized,2020-03-26
+810,70s Female,Ottawa,,close contact,self-isolating,2020-03-26
+811,60s Female,Peterborough,,close contact,self-isolating,2020-03-26
+812,50s Female,Peterborough,,close contact,self-isolating,2020-03-26
+813,pending,pending,,pending,pending,2020-03-26
+814,pending,pending,,pending,pending,2020-03-26
+815,pending,pending,,pending,pending,2020-03-26
+816,pending,pending,,pending,pending,2020-03-26
+817,pending,pending,,pending,pending,2020-03-26
+818,pending,pending,,pending,pending,2020-03-26
+819,pending,pending,,pending,pending,2020-03-26
+820,pending,pending,,pending,pending,2020-03-26
+821,pending,pending,,pending,pending,2020-03-26
+822,pending,pending,,pending,pending,2020-03-26
+823,pending,pending,,pending,pending,2020-03-26
+824,pending,pending,,pending,pending,2020-03-26
+825,pending,pending,,pending,pending,2020-03-26
+826,pending,pending,,pending,pending,2020-03-26
+827,pending,pending,,pending,pending,2020-03-26
+828,pending,pending,,pending,pending,2020-03-26
+829,pending,pending,,pending,pending,2020-03-26
+830,pending,pending,,pending,pending,2020-03-26
+831,pending,pending,,pending,pending,2020-03-26
+832,pending,pending,,pending,pending,2020-03-26
+833,pending,pending,,pending,pending,2020-03-26
+834,pending,pending,,pending,pending,2020-03-26
+835,pending,pending,,pending,pending,2020-03-26
+836,pending,pending,,pending,pending,2020-03-26
+837,pending,pending,,pending,pending,2020-03-26
+838,pending,pending,,pending,pending,2020-03-26
+839,pending,pending,,pending,pending,2020-03-26
+840,pending,pending,,pending,pending,2020-03-26
+841,pending,pending,,pending,pending,2020-03-26
+842,pending,pending,,pending,pending,2020-03-26
+843,pending,pending,,pending,pending,2020-03-26
+844,pending,pending,,pending,pending,2020-03-26
+845,pending,pending,,pending,pending,2020-03-26
+846,pending,pending,,pending,pending,2020-03-26
+847,pending,pending,,pending,pending,2020-03-26
+848,pending,pending,,pending,pending,2020-03-26
+849,pending,pending,,pending,pending,2020-03-26
+850,pending,pending,,pending,pending,2020-03-26
+851,pending,pending,,pending,pending,2020-03-26
+852,pending,pending,,pending,pending,2020-03-26
+853,pending,pending,,pending,pending,2020-03-26
+854,pending,pending,,pending,pending,2020-03-26
+855,pending,pending,,pending,pending,2020-03-26
+856,pending,pending,,pending,pending,2020-03-26
+857,pending,pending,,pending,pending,2020-03-26
+858,pending,pending,,pending,pending,2020-03-26
