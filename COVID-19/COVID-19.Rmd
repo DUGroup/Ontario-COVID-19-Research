@@ -1,0 +1,220 @@
+---
+title: "Ontario COVID-19 Tracking"
+output: flexdashboard::flex_dashboard
+css: styles.css
+runtime: shiny
+---
+```{r global, include=FALSE}
+library(shiny)
+library(shinydashboard)
+library(plotly)
+library(tidyverse)
+library(sf)
+library(leaflet)
+
+df <- read_csv ("https://raw.githubusercontent.com/DUGroup/Ontario-COVID-19-Research/master/Data/ontario_corona_cases.csv")
+
+dates_all <- read_csv("https://raw.githubusercontent.com/DUGroup/Ontario-COVID-19-Research/master/Data/dates_all.csv") 
+
+prov_agg <- read_csv ("https://raw.githubusercontent.com/DUGroup/Ontario-COVID-19-Research/master/Data/provincial_aggregrate.csv")
+
+phu <- read_csv("https://raw.githubusercontent.com/DUGroup/Ontario-COVID-19-Research/master/Data/phu_lat_long.csv")
+
+# Clean data --------------------------------------------------------------
+
+df <- df %>% 
+    mutate (Public_Health_Unit = ifelse (str_detect(Public_Health_Unit, "RichmondHill"), "York",
+                                         ifelse (str_detect(Public_Health_Unit, "Newmarket"), "York",
+                                                 Public_Health_Unit))) %>% 
+    mutate (Public_Health_Unit = ifelse(str_detect (Public_Health_Unit, "Haliburton"),
+                                        "Haliburton,Kawartha,Pine Ridge",
+                                        Public_Health_Unit)) %>% 
+  mutate (Public_Health_Unit = ifelse(str_detect (Public_Health_Unit, "Kingston"),
+                                        "Kingston, Frontenac and Lennox & Addington",
+                                        Public_Health_Unit)) %>% 
+  mutate (Public_Health_Unit = ifelse(str_detect (Public_Health_Unit, "Porcupine"),
+                                        "Porcupine District",
+                                      Public_Health_Unit)) %>% 
+  mutate (Public_Health_Unit = ifelse(str_detect (Public_Health_Unit, "Sudbury"),
+                                        "Sudbury and District",
+                                      Public_Health_Unit)) %>%
+  mutate(Public_Health_Unit = ifelse(Public_Health_Unit == "pending" |
+                                           Public_Health_Unit == "NotAvailable", "Pending or Not Available", Public_Health_Unit))
+
+# df %>% group_by (Public_Health_Unit) %>%  count () %>% print (n = Inf)
+
+df_province <- df %>% 
+    group_by (Date) %>% 
+    count () %>% 
+    ungroup() %>% 
+    mutate (cumsum = cumsum(n),
+            region = "Province") 
+
+# Create master data frame
+cases_by_region <- dates_all %>% 
+    left_join (df, by = c ("Date", "Public_Health_Unit")) %>% 
+    group_by(Public_Health_Unit) %>% 
+    mutate(Cases = cumsum (!is.na(Case_number))) %>% 
+    ungroup() %>% 
+    mutate (Public_Health_Unit = parse_factor(Public_Health_Unit))
+
+# Create linking colum for map
+
+cases_by_region <- cases_by_region %>% 
+  mutate (new_phu = dplyr::recode(as.character (Public_Health_Unit), 
+                           "Middlesex London" = "Middlesex"))
+
+n_pending <- df %>% 
+  dplyr::filter(Public_Health_Unit == "Pending or Not Available") %>% 
+  count ()
+
+
+```
+
+
+    
+Column {data-width=200}
+-------------------------------------
+    
+### 
+
+#### Ontario Data User Group (DUG)
+
+We are a group of researchers and analysts who are interested in data science and would like to use our expertise to contribute to the understanding of COVID-19 in our communities.
+
+#### Looking for data
+
+One of the challenges we encountered trying to understand the spread of COVID-19 was finding a data source in a format that is easily accessible for analysis. When we were unable to locate such a file (and finding that the process to scrape data through R was too messy given the formats that the information has been released) we decided to take a manual approach. Using a few different sources, we have compiled data tables which are easily accessible in R (our favorite) and Python.
+
+#### Opening the data from the source
+A [googlesheet](https://docs.google.com/spreadsheets/d/1Y3_qYkTJK6Vnhw3RCOhOiwafm4-PQxd5l0Hxk4x1ZxE/edit#gid=1483529771) has been created and is being maintained using data from an Ontario government website and resources available on two Wikipedia pages. We will continue to update these tables until a more authoritative source of case records is made available, ideally by Public Health Ontario.
+
+You can also access the data directly from DUG's [github](https://raw.githubusercontent.com/DUGroup/Ontario-COVID-19-Research/master/Data/ontario_corona_cases.csv) page.   
+
+#### Resources: An invitation to explore and dive deeper
+
+As we explore this data we will be sharing visualizations and insights on the Data User Group website. Our hope is that others will find our summaries useful. We extend an open invitation to others interested in data science to engage in additional analysis and use this data set for your own exploration
+
+#### Data background and sources
+
+You can read more about the project at the [Data User Group website](https://dugroup.ca/2020/03/19/covid19-understanding-ontario/).  
+
+
+Column {.tabset} 
+-------------------------------------
+
+### Ontario
+
+Data current as of `r Sys.Date()`
+
+```{r}
+
+fluidRow(
+  column(3, align = "center",
+         infoBox(title = h4("Confirmed Positive"),
+                 value = h4(length(df$Case_number)))),
+  column(3, align = "center",
+         infoBox(title = h4("Resolved"), 
+                 value = h4(prov_agg[4,2]))),
+  column(3, align = "center",
+         infoBox(title = h4("Number Tests"), 
+                 value = h4(prov_agg[6,2]))),
+  column(3, align = "center",
+         infoBox(title = h4("Deceased"), 
+                 value = h4(prov_agg[5,2])))
+  )
+
+
+```
+<br>
+<br>
+<br>
+
+```{r}
+plot_ly(df_province, 
+        x = ~Date, 
+        y = ~cumsum,
+        height = 400) %>% 
+  add_lines() %>% 
+  layout(
+    title = "Total Number of COVID-19 Cases in Ontario",
+    xaxis = list (title = "Date"),
+    yaxis = list (title = "Number of Cases",
+                  range = c(0, max(df_province$cumsum) + 50)
+                  )
+    )
+    
+
+```   
+ 
+
+### Cases by Public Health Unit
+
+The dataset currently incudes `r n_pending` cases listed as Pending or Not Available. The data below represents only those cases that have been identified by Public Health Unit. 
+
+```{r}
+
+phu_list <- sort (unique(df$Public_Health_Unit))
+
+selectInput("phu", 
+            "Public Heatlh Unit",
+            choices = phu_list)
+
+```
+
+
+    
+```{r}
+
+renderPlotly(
+plot_ly(cases_by_region %>% dplyr::filter (Public_Health_Unit == input$phu), 
+        x = ~Date, 
+        y = ~Cases,
+        height = 400) %>% 
+            add_lines (color = ~Public_Health_Unit) %>% 
+            layout(
+                title = "Total Number of COVID-19 Cases by Public Health Unit",
+                xaxis = list (title = "Date"),
+                yaxis = list (title = "Number of Cases")
+            )
+)
+    
+```
+
+### Map of Cases by Public Health Unit
+
+The map provides data only for those cases that have an identified health unit. Currently there are `r n_pending` out of the `r length (df$Case_number)` cases that are listed as Pending or Not Available. 
+
+The number inside the bubble shows the number of Public Health Units in that area that have reported cases of COVID-19. Clicking the bubble will zoom into that level of geography. 
+
+The purple circles show the number of confirmed COVID-19 cases in that region. The larger the circle, the more cases. Cicking on the circle will show the name of the Public Health Unit and the number of cases. 
+
+```{r fig.height=5}
+
+total_cases_region <- df %>% 
+  group_by (Public_Health_Unit) %>% 
+  count ()
+
+phu <- phu %>% 
+  left_join(total_cases_region)
+
+leaflet(data = phu) %>%
+  addTiles() %>%  
+  addCircleMarkers(~long, ~lat, 
+                   radius = ~sqrt(n) + 3,
+                   label = ~as.character(paste0(Public_Health_Unit, " ", n, " cases")),
+                   popup = ~as.character(paste0(Public_Health_Unit, " ", n, " cases")), 
+                   stroke = FALSE, 
+                   fillOpacity = 0.8,
+                   color = "purple",
+                   clusterOptions = markerClusterOptions()
+                   ) 
+# %>% 
+#   addMarkers(~long, ~lat, 
+#              popup = ~as.character(paste0(Public_Health_Unit, " ", n, " cases")) , 
+#              label = ~as.character(paste0(Public_Health_Unit, " ", n, " cases")),
+#              clusterOptions = markerClusterOptions()
+#              ) 
+
+```
+

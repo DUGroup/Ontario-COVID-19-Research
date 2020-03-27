@@ -1,0 +1,23 @@
+
+body {
+  background-color: white;
+}
+
+.navbar-inverse {
+    background-color: black;
+    border-color: silver;
+  
+}
+
+h4 {
+  color: black;
+  text-align: left;
+  font-weight: bold;
+}
+
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+}
+
