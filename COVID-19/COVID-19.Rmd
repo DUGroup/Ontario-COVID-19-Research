@@ -9,8 +9,8 @@ library(shiny)
 library(shinydashboard)
 library(plotly)
 library(tidyverse)
-library(sf)
 library(leaflet)
+library(lubridate)
 
 df <- read_csv ("https://raw.githubusercontent.com/DUGroup/Ontario-COVID-19-Research/master/Data/ontario_corona_cases.csv")
 
@@ -51,18 +51,27 @@ df_province <- df %>%
             region = "Province") 
 
 # Create master data frame
-cases_by_region <- dates_all %>% 
-    left_join (df, by = c ("Date", "Public_Health_Unit")) %>% 
-    group_by(Public_Health_Unit) %>% 
-    mutate(Cases = cumsum (!is.na(Case_number))) %>% 
-    ungroup() %>% 
+cases_by_region <- dates_all %>%
+    left_join (df, by = c ("Date", "Public_Health_Unit")) %>%
+    group_by(Public_Health_Unit) %>%
+    mutate(Cases = cumsum (!is.na(Case_number))) %>%
+    ungroup() %>%
     mutate (Public_Health_Unit = parse_factor(Public_Health_Unit))
 
-# Create linking colum for map
+# # Create linking colum for map
+# 
+# cases_by_region <- cases_by_region %>% 
+#   mutate (new_phu = dplyr::recode(as.character (Public_Health_Unit), 
+#                            "Middlesex London" = "Middlesex"))
 
-cases_by_region <- cases_by_region %>% 
-  mutate (new_phu = dplyr::recode(as.character (Public_Health_Unit), 
-                           "Middlesex London" = "Middlesex"))
+cases_by_region_map <- read_csv ("https://raw.githubusercontent.com/DUGroup/Ontario-COVID-19-Research/master/Data/regional_data.csv"
+                ) %>% 
+  mutate (Date = ymd(Date)) %>% 
+  # remove Simoce as it's now combined with Muskoks
+  dplyr::filter (Region != "Simcoe") %>% 
+  dplyr::filter(Region != "Muskoka") %>% 
+  # filter for most recent entry by Region
+  group_by(Region) %>% top_n(1, Date)
 
 n_pending <- df %>% 
   dplyr::filter(Public_Health_Unit == "Pending or Not Available") %>% 
@@ -183,38 +192,28 @@ plot_ly(cases_by_region %>% dplyr::filter (Public_Health_Unit == input$phu),
 
 ### Map of Cases by Public Health Unit
 
-The map provides data only for those cases that have an identified health unit. Currently there are `r n_pending` out of the `r length (df$Case_number)` cases that are listed as Pending or Not Available. 
-
-The number inside the bubble shows the number of Public Health Units in that area that have reported cases of COVID-19. Clicking the bubble will zoom into that level of geography. 
+The map provides data only for those cases that have an identified health unit. This data has been collected through Wikipedia and various news reports. The full dataset can be found at the [DUG googlesheets](https://docs.google.com/spreadsheets/d/1Y3_qYkTJK6Vnhw3RCOhOiwafm4-PQxd5l0Hxk4x1ZxE/edit) or [github](https://github.com/DUGroup/Ontario-COVID-19-Research/blob/master/Data/regional_data.csv) page.  
 
 The purple circles show the number of confirmed COVID-19 cases in that region. The larger the circle, the more cases. Cicking on the circle will show the name of the Public Health Unit and the number of cases. 
 
 ```{r fig.height=5}
 
-total_cases_region <- df %>% 
-  group_by (Public_Health_Unit) %>% 
-  count ()
+# total_cases_region <- df %>% 
+#   group_by (Public_Health_Unit) %>% 
+#   count ()
+# 
+# phu <- phu %>% 
+#   left_join(total_cases_region)
 
-phu <- phu %>% 
-  left_join(total_cases_region)
-
-leaflet(data = phu) %>%
+leaflet(data = cases_by_region_map) %>%
   addTiles() %>%  
   addCircleMarkers(~long, ~lat, 
-                   radius = ~sqrt(n) + 3,
-                   label = ~as.character(paste0(Public_Health_Unit, " ", n, " cases")),
-                   popup = ~as.character(paste0(Public_Health_Unit, " ", n, " cases")), 
+                   radius = ~sqrt(Cases) + 3,
+                   label = ~as.character(paste0(Region, " ", Cases, " cases")),
+                   popup = ~as.character(paste0(Region, " ", Cases, " cases")),
                    stroke = FALSE, 
-                   fillOpacity = 0.8,
-                   color = "purple",
-                   clusterOptions = markerClusterOptions()
-                   ) 
-# %>% 
-#   addMarkers(~long, ~lat, 
-#              popup = ~as.character(paste0(Public_Health_Unit, " ", n, " cases")) , 
-#              label = ~as.character(paste0(Public_Health_Unit, " ", n, " cases")),
-#              clusterOptions = markerClusterOptions()
-#              ) 
+                   fillOpacity = 0.7,
+                   color = "purple")
 
 ```
 
