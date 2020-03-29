@@ -1,7 +1,16 @@
 Description,n
+<<<<<<< HEAD
+Negative,40630
+Currently under investigation,7203
+Confirmed positive,1326
+Resolved,8
+Deceased,21
+Tested,49186
+=======
 Negative,33240
 Currently under investigation,8690
 Confirmed positive,1118
 Resolved,8
 Deceased,18
 Tested,43072
+>>>>>>> 48c0c0902352cab2eea7a9f2a35c6072d7fe2868

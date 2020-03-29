@@ -40,12 +40,12 @@ Case_number,age_gender,Public_Health_Unit,Hospital,Transmission,Status,Date
 39,30s Male,Toronto,Toronto Western,travel (USA),self-isolating,2020-03-11
 40,40s Male,Ottawa,Ottawa Hospital,travel (Austria),self-isolating,2020-03-11
 41,30s Female,Halton,Hamilton Health Sciences,travel (USA),self-isolating,2020-03-11
-42,40s Female,Toronto,St JosephÕs Health Centre,travel (USA),self-isolating,2020-03-11
+42,40s Female,Toronto,St Josephï¿½s Health Centre,travel (USA),self-isolating,2020-03-11
 43,50s Male,Hamilton,pending,travel (pending),self-isolating,2020-03-12
 44,<18 Female,Peel,N/A,close contact,self-isolating,2020-03-12
 45,20s Male,Toronto,Sunnybrook,close contact,self-isolating,2020-03-12
 46,70s Male,Toronto,Mississauga Hospital,travel (USA),self-isolating,2020-03-12
-47,40s Male,Toronto,St MichaelÕs Hospital,travel (USA),self-isolating,2020-03-12
+47,40s Male,Toronto,St Michaelï¿½s Hospital,travel (USA),self-isolating,2020-03-12
 48,60s Female,Waterloo,Grand River Hospital,travel (Puerto Rico),self-isolating,2020-03-12
 49,40s Female,Ottawa,Queensway Carlton Hospital,travel (Italy),self-isolating,2020-03-12
 50,20s Female,Toronto,Trillium Health Partners,travel (Europe),self-isolating,2020-03-12
@@ -464,8 +464,8 @@ Case_number,age_gender,Public_Health_Unit,Hospital,Transmission,Status,Date
 463,90s pending,Toronto,,pending,institution,2020-03-23
 464,40s Male,Durham,,pending,hospitalized,2020-03-23
 465,30s Female,Toronto,,pending,hospitalized,2020-03-23
-466,40s MaleÊ,Peel,,close contact,self-isolating,2020-03-23
-467,40s Female,Toronto,,close contactÊ,self-isolating,2020-03-23
+466,40s Maleï¿½,Peel,,close contact,self-isolating,2020-03-23
+467,40s Female,Toronto,,close contactï¿½,self-isolating,2020-03-23
 468,20s Female,Toronto,,travel (Spain),self-isolating,2020-03-23
 469,40s Male,York,,travel (Costa Rica),self-isolating,2020-03-23
 470,60s Female,York,,close contact,self-isolating,2020-03-23
@@ -1116,4 +1116,216 @@ Case_number,age_gender,Public_Health_Unit,Hospital,Transmission,Status,Date
 1115,pending,pending,,pending,pending,2020-03-28
 1116,pending,pending,,pending,pending,2020-03-28
 1117,pending,pending,,pending,pending,2020-03-28
+<<<<<<< HEAD
+1118,pending,pending,,pending,pending,2020-03-29
+1119,pending,pending,,pending,pending,2020-03-29
+1120,pending,pending,,pending,pending,2020-03-29
+1121,pending,pending,,pending,pending,2020-03-29
+1122,pending,pending,,pending,pending,2020-03-29
+1123,pending,pending,,pending,pending,2020-03-29
+1124,pending,pending,,pending,pending,2020-03-29
+1125,pending,pending,,pending,pending,2020-03-29
+1126,pending,pending,,pending,pending,2020-03-29
+1127,pending,pending,,pending,pending,2020-03-29
+1128,pending,pending,,pending,pending,2020-03-29
+1129,pending,pending,,pending,pending,2020-03-29
+1130,pending,pending,,pending,pending,2020-03-29
+1131,pending,pending,,pending,pending,2020-03-29
+1132,pending,pending,,pending,pending,2020-03-29
+1133,pending,pending,,pending,pending,2020-03-29
+1134,pending,pending,,pending,pending,2020-03-29
+1135,pending,pending,,pending,pending,2020-03-29
+1136,pending,pending,,pending,pending,2020-03-29
+1137,pending,pending,,pending,pending,2020-03-29
+1138,pending,pending,,pending,pending,2020-03-29
+1139,pending,pending,,pending,pending,2020-03-29
+1140,pending,pending,,pending,pending,2020-03-29
+1141,pending,pending,,pending,pending,2020-03-29
+1142,pending,pending,,pending,pending,2020-03-29
+1143,pending,pending,,pending,pending,2020-03-29
+1144,pending,pending,,pending,pending,2020-03-29
+1145,pending,pending,,pending,pending,2020-03-29
+1146,pending,pending,,pending,pending,2020-03-29
+1147,pending,pending,,pending,pending,2020-03-29
+1148,pending,pending,,pending,pending,2020-03-29
+1149,pending,pending,,pending,pending,2020-03-29
+1150,pending,pending,,pending,pending,2020-03-29
+1151,pending,pending,,pending,pending,2020-03-29
+1152,pending,pending,,pending,pending,2020-03-29
+1153,pending,pending,,pending,pending,2020-03-29
+1154,pending,pending,,pending,pending,2020-03-29
+1155,pending,pending,,pending,pending,2020-03-29
+1156,pending,pending,,pending,pending,2020-03-29
+1157,pending,pending,,pending,pending,2020-03-29
+1158,pending,pending,,pending,pending,2020-03-29
+1159,pending,pending,,pending,pending,2020-03-29
+1160,pending,pending,,pending,pending,2020-03-29
+1161,pending,pending,,pending,pending,2020-03-29
+1162,pending,pending,,pending,pending,2020-03-29
+1163,pending,pending,,pending,pending,2020-03-29
+1164,pending,pending,,pending,pending,2020-03-29
+1165,pending,pending,,pending,pending,2020-03-29
+1166,pending,pending,,pending,pending,2020-03-29
+1167,pending,pending,,pending,pending,2020-03-29
+1168,pending,pending,,pending,pending,2020-03-29
+1169,pending,pending,,pending,pending,2020-03-29
+1170,pending,pending,,pending,pending,2020-03-29
+1171,pending,pending,,pending,pending,2020-03-29
+1172,pending,pending,,pending,pending,2020-03-29
+1173,pending,pending,,pending,pending,2020-03-29
+1174,pending,pending,,pending,pending,2020-03-29
+1175,pending,pending,,pending,pending,2020-03-29
+1176,pending,pending,,pending,pending,2020-03-29
+1177,pending,pending,,pending,pending,2020-03-29
+1178,pending,pending,,pending,pending,2020-03-29
+1179,pending,pending,,pending,pending,2020-03-29
+1180,pending,pending,,pending,pending,2020-03-29
+1181,pending,pending,,pending,pending,2020-03-29
+1182,pending,pending,,pending,pending,2020-03-29
+1183,pending,pending,,pending,pending,2020-03-29
+1184,pending,pending,,pending,pending,2020-03-29
+1185,pending,pending,,pending,pending,2020-03-29
+1186,pending,pending,,pending,pending,2020-03-29
+1187,pending,pending,,pending,pending,2020-03-29
+1188,pending,pending,,pending,pending,2020-03-29
+1189,pending,pending,,pending,pending,2020-03-29
+1190,pending,pending,,pending,pending,2020-03-29
+1191,pending,pending,,pending,pending,2020-03-29
+1192,pending,pending,,pending,pending,2020-03-29
+1193,pending,pending,,pending,pending,2020-03-29
+1194,pending,pending,,pending,pending,2020-03-29
+1195,pending,pending,,pending,pending,2020-03-29
+1196,pending,pending,,pending,pending,2020-03-29
+1197,pending,pending,,pending,pending,2020-03-29
+1198,pending,pending,,pending,pending,2020-03-29
+1199,pending,pending,,pending,pending,2020-03-29
+1200,pending,pending,,pending,pending,2020-03-29
+1201,pending,pending,,pending,pending,2020-03-29
+1202,pending,pending,,pending,pending,2020-03-29
+1203,pending,pending,,pending,pending,2020-03-29
+1204,pending,pending,,pending,pending,2020-03-29
+1205,pending,pending,,pending,pending,2020-03-29
+1206,pending,pending,,pending,pending,2020-03-29
+1207,pending,pending,,pending,pending,2020-03-29
+1208,pending,pending,,pending,pending,2020-03-29
+1209,pending,pending,,pending,pending,2020-03-29
+1210,pending,pending,,pending,pending,2020-03-29
+1211,pending,pending,,pending,pending,2020-03-29
+1212,pending,pending,,pending,pending,2020-03-29
+1213,pending,pending,,pending,pending,2020-03-29
+1214,pending,pending,,pending,pending,2020-03-29
+1215,pending,pending,,pending,pending,2020-03-29
+1216,pending,pending,,pending,pending,2020-03-29
+1217,pending,pending,,pending,pending,2020-03-29
+1218,pending,pending,,pending,pending,2020-03-29
+1219,pending,pending,,pending,pending,2020-03-29
+1220,pending,pending,,pending,pending,2020-03-29
+1221,pending,pending,,pending,pending,2020-03-29
+1222,pending,pending,,pending,pending,2020-03-29
+1223,pending,pending,,pending,pending,2020-03-29
+1224,pending,pending,,pending,pending,2020-03-29
+1225,pending,pending,,pending,pending,2020-03-29
+1226,pending,pending,,pending,pending,2020-03-29
+1227,pending,pending,,pending,pending,2020-03-29
+1228,pending,pending,,pending,pending,2020-03-29
+1229,pending,pending,,pending,pending,2020-03-29
+1230,pending,pending,,pending,pending,2020-03-29
+1231,pending,pending,,pending,pending,2020-03-29
+1232,pending,pending,,pending,pending,2020-03-29
+1233,pending,pending,,pending,pending,2020-03-29
+1234,pending,pending,,pending,pending,2020-03-29
+1235,pending,pending,,pending,pending,2020-03-29
+1236,pending,pending,,pending,pending,2020-03-29
+1237,pending,pending,,pending,pending,2020-03-29
+1238,pending,pending,,pending,pending,2020-03-29
+1239,pending,pending,,pending,pending,2020-03-29
+1240,pending,pending,,pending,pending,2020-03-29
+1241,pending,pending,,pending,pending,2020-03-29
+1242,pending,pending,,pending,pending,2020-03-29
+1243,pending,pending,,pending,pending,2020-03-29
+1244,pending,pending,,pending,pending,2020-03-29
+1245,pending,pending,,pending,pending,2020-03-29
+1246,pending,pending,,pending,pending,2020-03-29
+1247,pending,pending,,pending,pending,2020-03-29
+1248,pending,pending,,pending,pending,2020-03-29
+1249,pending,pending,,pending,pending,2020-03-29
+1250,pending,pending,,pending,pending,2020-03-29
+1251,pending,pending,,pending,pending,2020-03-29
+1252,pending,pending,,pending,pending,2020-03-29
+1253,pending,pending,,pending,pending,2020-03-29
+1254,pending,pending,,pending,pending,2020-03-29
+1255,pending,pending,,pending,pending,2020-03-29
+1256,pending,pending,,pending,pending,2020-03-29
+1257,pending,pending,,pending,pending,2020-03-29
+1258,pending,pending,,pending,pending,2020-03-29
+1259,pending,pending,,pending,pending,2020-03-29
+1260,pending,pending,,pending,pending,2020-03-29
+1261,pending,pending,,pending,pending,2020-03-29
+1262,pending,pending,,pending,pending,2020-03-29
+1263,pending,pending,,pending,pending,2020-03-29
+1264,pending,pending,,pending,pending,2020-03-29
+1265,pending,pending,,pending,pending,2020-03-29
+1266,pending,pending,,pending,pending,2020-03-29
+1267,pending,pending,,pending,pending,2020-03-29
+1268,pending,pending,,pending,pending,2020-03-29
+1269,pending,pending,,pending,pending,2020-03-29
+1270,pending,pending,,pending,pending,2020-03-29
+1271,pending,pending,,pending,pending,2020-03-29
+1272,pending,pending,,pending,pending,2020-03-29
+1273,pending,pending,,pending,pending,2020-03-29
+1274,pending,pending,,pending,pending,2020-03-29
+1275,pending,pending,,pending,pending,2020-03-29
+1276,pending,pending,,pending,pending,2020-03-29
+1277,pending,pending,,pending,pending,2020-03-29
+1278,pending,pending,,pending,pending,2020-03-29
+1279,pending,pending,,pending,pending,2020-03-29
+1280,pending,pending,,pending,pending,2020-03-29
+1281,pending,pending,,pending,pending,2020-03-29
+1282,pending,pending,,pending,pending,2020-03-29
+1283,pending,pending,,pending,pending,2020-03-29
+1284,pending,pending,,pending,pending,2020-03-29
+1285,pending,pending,,pending,pending,2020-03-29
+1286,pending,pending,,pending,pending,2020-03-29
+1287,pending,pending,,pending,pending,2020-03-29
+1288,pending,pending,,pending,pending,2020-03-29
+1289,pending,pending,,pending,pending,2020-03-29
+1290,pending,pending,,pending,pending,2020-03-29
+1291,pending,pending,,pending,pending,2020-03-29
+1292,pending,pending,,pending,pending,2020-03-29
+1293,pending,pending,,pending,pending,2020-03-29
+1294,pending,pending,,pending,pending,2020-03-29
+1295,pending,pending,,pending,pending,2020-03-29
+1296,pending,pending,,pending,pending,2020-03-29
+1297,pending,pending,,pending,pending,2020-03-29
+1298,pending,pending,,pending,pending,2020-03-29
+1299,pending,pending,,pending,pending,2020-03-29
+1300,pending,pending,,pending,pending,2020-03-29
+1301,pending,pending,,pending,pending,2020-03-29
+1302,pending,pending,,pending,pending,2020-03-29
+1303,pending,pending,,pending,pending,2020-03-29
+1304,pending,pending,,pending,pending,2020-03-29
+1305,pending,pending,,pending,pending,2020-03-29
+1306,pending,pending,,pending,pending,2020-03-29
+1307,pending,pending,,pending,pending,2020-03-29
+1308,pending,pending,,pending,pending,2020-03-29
+1309,pending,pending,,pending,pending,2020-03-29
+1310,pending,pending,,pending,pending,2020-03-29
+1311,pending,pending,,pending,pending,2020-03-29
+1312,pending,pending,,pending,pending,2020-03-29
+1313,pending,pending,,pending,pending,2020-03-29
+1314,pending,pending,,pending,pending,2020-03-29
+1315,pending,pending,,pending,pending,2020-03-29
+1316,pending,pending,,pending,pending,2020-03-29
+1317,pending,pending,,pending,pending,2020-03-29
+1318,pending,pending,,pending,pending,2020-03-29
+1319,pending,pending,,pending,pending,2020-03-29
+1320,pending,pending,,pending,pending,2020-03-29
+1321,pending,pending,,pending,pending,2020-03-29
+1322,pending,pending,,pending,pending,2020-03-29
+1323,pending,pending,,pending,pending,2020-03-29
+1324,pending,pending,,pending,pending,2020-03-29
+1325,pending,pending,,pending,pending,2020-03-29
+1326,pending,pending,,pending,pending,2020-03-29
+=======
 1118,pending,pending,,pending,pending,2020-03-28
+>>>>>>> 48c0c0902352cab2eea7a9f2a35c6072d7fe2868
