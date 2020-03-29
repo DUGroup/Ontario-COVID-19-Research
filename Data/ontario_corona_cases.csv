@@ -1116,7 +1116,6 @@ Case_number,age_gender,Public_Health_Unit,Hospital,Transmission,Status,Date
 1115,pending,pending,,pending,pending,2020-03-28
 1116,pending,pending,,pending,pending,2020-03-28
 1117,pending,pending,,pending,pending,2020-03-28
-<<<<<<< HEAD
 1118,pending,pending,,pending,pending,2020-03-29
 1119,pending,pending,,pending,pending,2020-03-29
 1120,pending,pending,,pending,pending,2020-03-29
@@ -1326,6 +1325,3 @@ Case_number,age_gender,Public_Health_Unit,Hospital,Transmission,Status,Date
 1324,pending,pending,,pending,pending,2020-03-29
 1325,pending,pending,,pending,pending,2020-03-29
 1326,pending,pending,,pending,pending,2020-03-29
-=======
-1118,pending,pending,,pending,pending,2020-03-28
->>>>>>> 48c0c0902352cab2eea7a9f2a35c6072d7fe2868
