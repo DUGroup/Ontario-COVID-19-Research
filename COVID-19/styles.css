@@ -1,13 +1,27 @@
 
+
+
 body {
   background-color: white;
 }
 
 .navbar-inverse {
-    background-color: black;
-    border-color: silver;
+    background-color: #0B6EA1;
+    border-color: white;
+    font-size: 13px;
   
 }
+
+.info-box{
+  width: 200px;
+  height: 110px;
+  background-color: #0B6EA1;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  
+}
+
 
 h4 {
   color: black;
