@@ -313,6 +313,8 @@ n_school_boards <- length(unique(school_covid$school_board))
 # 
 # test <- data.frame (group, n)
 
+
+
 ```
 
 This map shows the school boards with reported cases of COVID-19 as reported to the Ministry of Health. The dataset can be found [here](https://data.ontario.ca/dataset/b1fef838-8784-4338-8ef9-ae7cfd405b41/resource/8b6d22e2-7065-4b0f-966f-02640be366f2/download/schoolsactivecovid.csv). The Data User Group has started and maintained a data sheet with the schools' geocode [here](https://raw.githubusercontent.com/DUGroup/Ontario-COVID-19-Research/master/Data/schools_geocode.csv).
